@@ -159,6 +159,39 @@ public class Tools {
         return CURP;
     }
 
+    public static String GenerateRFC(String nombre, String apellidos, LocalDate fechaNac){
+        String[] arrApellidos = apellidos.split(" ");
+        String RFC="";
+        char letra;
+
+        // Nombres y apellidos
+
+        for (int i = 0; i < 2; i++) {
+            letra = apellidos.charAt(i);
+            RFC += Character.toUpperCase(letra);
+        }
+
+        letra = arrApellidos[1].charAt(0);
+        RFC += Character.toUpperCase(letra);
+        letra = nombre.charAt(0);
+        RFC += Character.toUpperCase(letra);
+        
+        // Fecha de nacimiento
+
+        RFC += String.format("%02d",fechaNac.getYear() % 100);
+        RFC += String.format("%02d",fechaNac.getMonthValue() % 100);
+        RFC += String.format("%02d",fechaNac.getDayOfMonth() % 100);
+
+        // Homoclave generada por el algoritmo
+
+        for (int i = 0; i < 3; i++) {
+            int num = ran.nextInt(10);
+            RFC += num;
+        }
+
+        return RFC;
+    }
+
     public static String GenerateCtrlNum(String nombre, LocalDate fechaRegistro, NombreDeCarrera nombreDeCarrera){
         // Primer letra (por default)
         String numCtrl = "I";
