@@ -41,5 +41,9 @@ public class Usuario {
     public String getContraseña() {
         return contraseña;
     }
+
+    public String getNombreCompleto() {
+        return nombre + " " + apellidos;
+    }
     
 }

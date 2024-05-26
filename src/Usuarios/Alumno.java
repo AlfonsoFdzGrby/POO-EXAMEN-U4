@@ -20,7 +20,7 @@ public class Alumno extends Usuario {
         this.semestre = semestre;
         this.grupo = grupo;
         this.promedio = promedio;
-        this.numControl = Tools.GenerateCtrlNum(nombre, fechaNacimiento, carrera.getCarrera(), rol);
+        this.numControl = Tools.GenerateCtrlNum(nombre, LocalDate.now(), carrera.getCarrera(), rol);
         this.contraseña = contraseña;
     }
 

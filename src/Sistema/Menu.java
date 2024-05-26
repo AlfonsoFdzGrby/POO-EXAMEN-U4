@@ -28,9 +28,20 @@ public class Menu {
             int opc = Tools.nextInt();
             switch (opc) {
                 case 1 -> {
-                    Usuario usuario = Sistema.iniciarSesion();
-                    if(usuario instanceof Alumno){
-
+                    while(true){
+                        Usuario usuario = Sistema.iniciarSesion();
+                        if(usuario instanceof Alumno){
+                            usuarioEnSesion.setUsuario(usuario);
+                            System.out.println("Se ha iniciado sesión correctamente con el");
+                            System.out.println("alumno " + usuarioEnSesion.getUsuarioActual().getNombreCompleto() + ".");
+                            Tools.next();
+                            //menuAlumno();
+                            break;
+                        }else if(!(usuario instanceof Alumno)){
+                            System.out.println("No se ha encontrado al alumno ingresado");
+                        }else{
+                            break;
+                        }
                     }
                 }
 
@@ -52,7 +63,7 @@ public class Menu {
             }
         }
         //esto va después de asignarlo al singleton
-        System.out.println("Se ha iniciado sesión correctamente con");
+        
 
     }
 }

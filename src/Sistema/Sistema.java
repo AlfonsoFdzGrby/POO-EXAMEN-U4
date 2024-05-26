@@ -23,8 +23,18 @@ public class Sistema {
         usuarios.put(Rol.ALUMNO, new ArrayList<>());
         usuarios.put(Rol.PROFESOR, new ArrayList<>());
         usuarios.put(Rol.COORDINADOR, new ArrayList<>());
-        carreras.add(new Carrera(NombreDeCarrera.ISC, 3, 0, 0, LocalDate.of(1963, 10, 23), "Laura Nelly Alvarado Zamora"));
+        
+        carreras.add(new Carrera(NombreDeCarrera.ISC, 3, 0, 0, LocalDate.of(1993, 10, 23), "Laura Nelly Alvarado Zamora"));
+        carreras.add(new Carrera(NombreDeCarrera.ELC, 3, 0, 0, LocalDate.of(1984, 3, 15), "Laura Nelly Alvarado Zamora"));
+        carreras.add(new Carrera(NombreDeCarrera.IMAT, 3, 0, 0, LocalDate.of(1970, 8, 20), "Francisco Calderón Reyes"));
+        
         agregarUsuario(new Alumno("Javier", "Martínez López", LocalDate.of(2000, 4, 9), "Morelia", "Michoacán", "Calle Matamoros #323", true, carreras.get(0), 1, LetraGrupo.A, 0, "1234"), Rol.ALUMNO);
+        agregarUsuario(new Alumno("Jaime", "Marquez López", LocalDate.of(2000, 4, 9), "Morelia", "Michoacán", "Calle Matamoros #323", true, carreras.get(0), 1, LetraGrupo.A, 0, "1234"), Rol.ALUMNO);
+        agregarUsuario(new Alumno("Jaiba", "Mar Lucaz", LocalDate.of(2000, 4, 9), "Morelia", "Michoacán", "Calle Matamoros #323", true, carreras.get(0), 1, LetraGrupo.A, 0, "1234"), Rol.ALUMNO);
+
+        System.out.println("N de alumno 1: " + usuarios.get(Rol.ALUMNO).get(0).getNumControl());
+        System.out.println("N de alumno 2: " + usuarios.get(Rol.ALUMNO).get(1).getNumControl());
+        System.out.println("N de alumno 3: " + usuarios.get(Rol.ALUMNO).get(2).getNumControl());
     }
 
     public static Usuario iniciarSesion(){
@@ -46,7 +56,6 @@ public class Sistema {
 
                 if(usuario==null){
                     System.out.println("El usuario no fue encontrado");
-                    System.out.println("Ingrese un número de control válido");
                 }else{
                     break;
                 }

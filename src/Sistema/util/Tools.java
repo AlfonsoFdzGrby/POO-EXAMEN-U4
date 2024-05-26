@@ -5,12 +5,14 @@ import java.time.format.*;
 import java.util.*;
 
 import src.Carrera.util.NombreDeCarrera;
+import src.Sistema.Sistema;
+import src.Usuarios.Usuario;
 import src.Usuarios.util.Rol;
 
 public class Tools {
     private static Scanner sc = new Scanner(System.in);
     private static Random ran = new Random();
-    private static int indiceNControl = 0;
+
 
     public static void printHeader(String header){
         System.out.println("===============================================================");
@@ -203,15 +205,40 @@ public class Tools {
             case COORDINADOR -> numCtrl += "C";
         }
 
-        // Año (ultimos dos dígitos del año)
+        // Primera letra de su nombre
+        numCtrl += Character.toUpperCase(nombre.charAt(0));
+
+        // Año (últimos dos dígitos del año)
         int año = fechaRegistro.getYear();
-        numCtrl += año%100;
+        numCtrl += String.format("%02d", año % 100);
 
         // Abreviación carrera
         numCtrl += nombreDeCarrera.toString();
 
-        // Indice (REQUIERE DE UNA VALIDACIÓN)
-        numCtrl += indiceNControl;
+        // Comienza con el índice 0
+        int indice = 0;
+
+        // Crea un StringBuilder con el valor actual de numCtrl
+        StringBuilder numeroNuevo = new StringBuilder(numCtrl);
+
+        // Buscar el mayor índice existente
+        for (ArrayList<Usuario> listaDeUsuarios : Sistema.usuarios.values()) {
+            for (Usuario usuario : listaDeUsuarios) {
+                String numeroExistente = usuario.getNumControl();
+                // Comprobar si el número de control existente tiene el mismo prefijo
+                if (numeroExistente.startsWith(numCtrl)) {
+                    // Obtener el índice del número de control existente
+                    int indiceExistente = Character.getNumericValue(numeroExistente.charAt(7));
+                    // Actualizar el índice si el índice existente es mayor o igual
+                    if (indice <= indiceExistente) {
+                        indice = indiceExistente + 1;
+                    }
+                }
+            }
+        }
+
+        // Añadir el índice final al número de control
+        numCtrl += indice;
 
         return numCtrl;
     }
