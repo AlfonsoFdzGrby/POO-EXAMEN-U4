@@ -1,12 +1,16 @@
 package src.Sistema;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
 import src.Carrera.Carrera;
+import src.Carrera.util.NombreDeCarrera;
+import src.Grupos.util.LetraGrupo;
 import src.Sistema.util.Tools;
 import src.Sistema.util.JSON.UsuariosSerializer;
+import src.Usuarios.Alumno;
 import src.Usuarios.Usuario;
 import src.Usuarios.util.Rol;
 
@@ -19,6 +23,8 @@ public class Sistema {
         usuarios.put(Rol.ALUMNO, new ArrayList<>());
         usuarios.put(Rol.PROFESOR, new ArrayList<>());
         usuarios.put(Rol.COORDINADOR, new ArrayList<>());
+        carreras.add(new Carrera(NombreDeCarrera.ISC, 3, 0, 0, LocalDate.of(1963, 10, 23), "Laura Nelly Alvarado Zamora"));
+        agregarUsuario(new Alumno("Javier", "Martínez López", LocalDate.of(2000, 4, 9), "Morelia", "Michoacán", "Calle Matamoros #323", true, carreras.get(0), 1, LetraGrupo.A, 0, "1234"), Rol.ALUMNO);
     }
 
     public static Usuario iniciarSesion(){

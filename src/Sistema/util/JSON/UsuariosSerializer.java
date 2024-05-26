@@ -19,7 +19,7 @@ public class UsuariosSerializer {
             json.toJson(Sistema.usuarios, writer);
             writer.close();
         } catch (Exception e) {
-            System.out.println("ERROR: " + e);
+            e.printStackTrace();
         }
     }
 

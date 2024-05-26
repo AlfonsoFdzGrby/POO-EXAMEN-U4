@@ -18,7 +18,7 @@ public class Carrera {
     // GRADUADOS (x alumno): Fecha graduación (fecha con formato), carrera, alumnos graduados, generación de graduación
     // GRUPOS: máximo 2 grupos (A y B) si un grupo tiene más de 3 alumnos, se puede crear un siguiente grupo
     private int cantidadMaterias;
-    private LocalDate fechaDeFundacion;
+    private String fechaDeFundacion;
     private String coordinador;
     
     public Carrera(NombreDeCarrera carrera, int cantidadGrupos, int cantidadAlumnos, int cantidadMaterias,
@@ -34,7 +34,7 @@ public class Carrera {
         this.cantidadGrupos = cantidadGrupos;
         this.cantidadAlumnos = cantidadAlumnos;
         this.cantidadMaterias = cantidadMaterias;
-        this.fechaDeFundacion = fechaDeFundacion;
+        this.fechaDeFundacion = fechaDeFundacion.toString();
         this.coordinador = coordinador;
         this.id = nextID;
         nextID++;

@@ -17,8 +17,6 @@ public class Menu {
     private static Sistema sistema = new Sistema();
 
     public static void ejecutarMenu(){
-        Sistema.carreras.add(new Carrera(NombreDeCarrera.ISC, 3, 0, 0, LocalDate.of(1963, 10, 23), "Laura Nelly Alvarado Zamora"));
-        Sistema.agregarUsuario(new Alumno("Javier", "Martínez López", LocalDate.of(2000, 4, 9), "Morelia", "Michoacán", "Calle Matamoros #323", true, Sistema.carreras.get(0), 1, LetraGrupo.A, 0, "1234"), Rol.ALUMNO);
         while(usuarioEnSesion.getUsuarioActual()==null){
             Tools.printHeader("MINDBOX - INICIAR SESIÓN");
             System.out.println("Seleccione una opción para ingresar como:");

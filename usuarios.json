@@ -1,0 +1,33 @@
+{
+  "COORDINADOR": [],
+  "ALUMNO": [
+    {
+      "carrera": {
+        "id": 1,
+        "carrera": "ISC",
+        "nombre": "Ingeniería en Sistemas Computacionales",
+        "cantidadGrupos": 3,
+        "cantidadAlumnos": 0,
+        "cantidadMaterias": 0,
+        "fechaDeFundacion": "1963-10-23",
+        "coordinador": "Laura Nelly Alvarado Zamora"
+      },
+      "semestre": 1,
+      "grupo": "A",
+      "promedio": 0.0,
+      "nombre": "Javier",
+      "apellidos": "Martínez López",
+      "fechaNacimiento": "2000-04-09",
+      "ciudad": "Morelia",
+      "estado": "Michoacán",
+      "curp": "MALJ000409HMIRÓV62",
+      "dirección": "Calle Matamoros #323",
+      "fechaRegistro": "2024-05-26",
+      "esHombre": true,
+      "rol": "ALUMNO",
+      "numControl": "I0ISC0",
+      "contraseña": "1234"
+    }
+  ],
+  "PROFESOR": []
+}
