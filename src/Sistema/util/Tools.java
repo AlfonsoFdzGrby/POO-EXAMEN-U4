@@ -13,6 +13,39 @@ public class Tools {
     private static Scanner sc = new Scanner(System.in);
     private static Random ran = new Random();
 
+    public static void printMindboxLogo(){
+        System.out.println("===============================================================");
+        System.out.println();
+        System.out.println("    ██      ██  ██              ██  ██");
+        System.out.println("    ████  ████                  ██  ██");
+        System.out.println("    ██  ██  ██  ██  █████    █████  █████    █████   ██ ██");
+        System.out.println("    ██      ██  ██  ██  ██  ██  ██  ██  ██  ██   ██   ███");
+        System.out.println("    ██      ██  ██  ██  ██   █████  █████    █████   ██ ██");
+        System.out.println();
+        System.out.println("===============================================================");
+        System.out.println();
+    }
+
+    public static void loadBar() throws Exception {
+        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        Thread.sleep(500);
+        printHeader("CARGANDO SISTEMA...");
+        String loadbar = "";
+        for (int i = 0; i <= 100; i+=2) {
+            System.out.print("\r" + i + "%  - | " + loadbar + " |");
+            loadbar += "█";
+            Thread.sleep(50);
+        }
+        System.out.println();
+        System.out.println("===============================================================");
+        System.out.println("¡Sistema cargado exitosamente!");
+        next();
+        clear();
+    }
+
+    public static void clear() throws Exception {
+        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+    }
 
     public static void printHeader(String header){
         System.out.println("===============================================================");

@@ -1,6 +1,6 @@
 package src.Sistema;
 
-import java.time.LocalDate;
+import java.time.*;
 import java.util.*;
 
 import src.Carrera.Carrera;
@@ -16,9 +16,11 @@ public class Menu {
     private static UsuarioEnSesion usuarioEnSesion = UsuarioEnSesion.getInstancia();
     private static Sistema sistema = new Sistema();
 
-    public static void ejecutarMenu(){
+    public static void ejecutarMenu() throws Exception {
+        //Tools.loadBar();
         while(usuarioEnSesion.getUsuarioActual()==null){
-            Tools.printHeader("MINDBOX - INICIAR SESIÓN");
+            Tools.clear();
+            Tools.printMindboxLogo(); 
             System.out.println("Seleccione una opción para ingresar como:");
             System.out.println("1. Alumno");
             System.out.println("2. Profesor");
@@ -28,6 +30,7 @@ public class Menu {
             int opc = Tools.nextInt();
             switch (opc) {
                 case 1 -> {
+                    Tools.printHeader("INGRESAR - ALUMNO");
                     while(true){
                         Usuario usuario = Sistema.iniciarSesion();
                         if(usuario instanceof Alumno){
@@ -35,35 +38,72 @@ public class Menu {
                             System.out.println("Se ha iniciado sesión correctamente con el");
                             System.out.println("alumno " + usuarioEnSesion.getUsuarioActual().getNombreCompleto() + ".");
                             Tools.next();
-                            //menuAlumno();
+                            menuAlumno();
                             break;
-                        }else if(!(usuario instanceof Alumno)){
-                            System.out.println("No se ha encontrado al alumno ingresado");
+                        }else if(usuario == null){
+                            break;
                         }else{
-                            break;
+                            System.out.println("No se ha encontrado al alumno ingresado");
                         }
                     }
                 }
 
                 case 2 -> {
-                    /*Profesor profesor = Sistema.iniciarSesionProfesor();
-                    *usuarioEnSesion.setUsuario(profesor); 
-                    */
+                    Tools.printHeader("INGRESAR - PROFESOR");
+                    while(true){
+                        Usuario usuario = Sistema.iniciarSesion();
+                        if(usuario instanceof Profesor){
+                            usuarioEnSesion.setUsuario(usuario);
+                            System.out.println("Se ha iniciado sesión correctamente con el");
+                            System.out.println("profesor " + usuarioEnSesion.getUsuarioActual().getNombreCompleto() + ".");
+                            Tools.next();
+                            menuProfesor();
+                            break;
+                        }else if(usuario == null){
+                            break;
+                        }else{
+                            System.out.println("No se ha encontrado al alumno ingresado");
+                        }
+                    }
                 }
 
                 case 3 -> {
-                    /*Coordinador coordinador = Sistema.iniciarSesionCoordinador();
-                    *usuarioEnSesion.setUsuario(coordinador); 
-                    */
+                    Tools.printHeader("INGRESAR - COORDINADOR");
+                    while(true){
+                        Usuario usuario = Sistema.iniciarSesion();
+                        if(usuario instanceof Coordinador){
+                            usuarioEnSesion.setUsuario(usuario);
+                            System.out.println("Se ha iniciado sesión correctamente con el");
+                            System.out.println("coordinador " + usuarioEnSesion.getUsuarioActual().getNombreCompleto() + ".");
+                            Tools.next();
+                            menuCoordinador();
+                            break;
+                        }else if(usuario == null){
+                            break;
+                        }else{
+                            System.out.println("No se ha encontrado al alumno ingresado");
+                        }
+                    }
                 }
 
                 case 4 -> System.exit(0);
-
-                default -> System.out.println("== OPCIÓN INVÁLIDA ==");
             }
         }
-        //esto va después de asignarlo al singleton
-        
+    }
+
+    private static void menuAlumno(){
+        while(usuarioEnSesion.getUsuarioActual()!=null){
+            Tools.printHeader("MINDBOX - ALUMNO");
+            System.out.println("Seleccione una opción:");
+
+        }
+    }
+
+    private static void menuProfesor(){
+
+    }
+
+    private static void menuCoordinador(){
 
     }
 }

@@ -1,5 +1,5 @@
 package src.Carrera.util;
 
 public enum NombreDeCarrera {
-    ISC, IMAT, ELC
+    ISC, IMT, ELC
 }

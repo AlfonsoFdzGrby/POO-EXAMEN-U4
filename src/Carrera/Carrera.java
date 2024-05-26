@@ -1,8 +1,10 @@
 package src.Carrera;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 import src.Carrera.util.NombreDeCarrera;
+import src.Semestre.Semestre;
 
 public class Carrera {
     private static int nextID = 1;
@@ -10,7 +12,8 @@ public class Carrera {
     private NombreDeCarrera carrera;
     private String nombre;
     private int cantidadGrupos;
-    private int cantidadAlumnos; //solo el coordinador puede avanzar de semestre
+    private int cantidadAlumnos; 
+    // solo el coordinador puede avanzar de semestre
     // después del tercer semestre es graduación
     // si el alumno reprueba una materia, se queda en el mismo semestre y grupo y sólo se quitan las calificaciones anteriores
     // (se queda en el mismo semestre, así haya sido una sola materia la que haya reprobado)
@@ -20,6 +23,7 @@ public class Carrera {
     private int cantidadMaterias;
     private String fechaDeFundacion;
     private String coordinador;
+    private ArrayList<Semestre> semestres;
     
     public Carrera(NombreDeCarrera carrera, int cantidadGrupos, int cantidadAlumnos, int cantidadMaterias,
             LocalDate fechaDeFundacion, String coordinador) {
@@ -27,7 +31,7 @@ public class Carrera {
 
         switch (carrera) {
             case ISC -> nombre = "Ingeniería en Sistemas Computacionales";
-            case IMAT -> nombre = "Ingeniería en Materiales";
+            case IMT -> nombre = "Ingeniería en Materiales";
             case ELC -> nombre = "Ingeniería Eléctrónica";
         }
 
