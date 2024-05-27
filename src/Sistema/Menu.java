@@ -17,7 +17,7 @@ public class Menu {
     private static Sistema sistema = new Sistema();
 
     public static void ejecutarMenu() throws Exception {
-        //Tools.loadBar();
+        Tools.loadBar();
         while(usuarioEnSesion.getUsuarioActual()==null){
             Tools.clear();
             Tools.printMindboxLogo(); 
@@ -33,17 +33,20 @@ public class Menu {
                     Tools.printHeader("INGRESAR - ALUMNO");
                     while(true){
                         Usuario usuario = Sistema.iniciarSesion();
-                        if(usuario instanceof Alumno){
+                        
+                        if(usuario == null){
+                            break;
+                        }
+
+                        if(usuario.getNumControl().charAt(0)=='I'){
                             usuarioEnSesion.setUsuario(usuario);
                             System.out.println("Se ha iniciado sesión correctamente con el");
                             System.out.println("alumno " + usuarioEnSesion.getUsuarioActual().getNombreCompleto() + ".");
                             Tools.next();
                             menuAlumno();
                             break;
-                        }else if(usuario == null){
-                            break;
                         }else{
-                            System.out.println("No se ha encontrado al alumno ingresado");
+                            System.out.println("El usuario encontrado no es un alumno");
                         }
                     }
                 }
@@ -95,7 +98,7 @@ public class Menu {
         while(usuarioEnSesion.getUsuarioActual()!=null){
             Tools.printHeader("MINDBOX - ALUMNO");
             System.out.println("Seleccione una opción:");
-
+            
         }
     }
 

@@ -61,7 +61,6 @@ public class Sistema {
                 if(intentos<=0){
                     System.out.println("Sus intentos se han agotado");
                     usuario = null;
-                    Tools.next();
                     break;
                 }
                 System.out.println("Tiene " + intentos + " intentos");

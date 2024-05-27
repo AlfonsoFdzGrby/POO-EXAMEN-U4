@@ -1,11 +1,13 @@
 package src.Sistema.util;
 
+import java.io.File;
 import java.time.*;
 import java.time.format.*;
 import java.util.*;
 
 import src.Carrera.util.NombreDeCarrera;
 import src.Sistema.Sistema;
+import src.Sistema.util.JSON.UsuariosSerializer;
 import src.Usuarios.Usuario;
 import src.Usuarios.util.Rol;
 
@@ -16,25 +18,51 @@ public class Tools {
     public static void printMindboxLogo(){
         System.out.println("===============================================================");
         System.out.println();
-        System.out.println("    ██      ██  ██              ██  ██");
-        System.out.println("    ████  ████                  ██  ██");
-        System.out.println("    ██  ██  ██  ██  █████    █████  █████    █████   ██ ██");
-        System.out.println("    ██      ██  ██  ██  ██  ██  ██  ██  ██  ██   ██   ███");
-        System.out.println("    ██      ██  ██  ██  ██   █████  █████    █████   ██ ██");
+        System.out.println("   ██      ██  ██              ██  ██");
+        System.out.println("   ████  ████                  ██  ██");
+        System.out.println("   ██  ██  ██  ██  █████    █████  █████    █████   ██ ██");
+        System.out.println("   ██      ██  ██  ██  ██  ██  ██  ██  ██  ██   ██   ███");
+        System.out.println("   ██      ██  ██  ██  ██   █████  █████    █████   ██ ██");
         System.out.println();
         System.out.println("===============================================================");
         System.out.println();
     }
 
     public static void loadBar() throws Exception {
-        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        clear();
+        File file = new File("usuarios.json");
+        printHeader("CARGAR ARCHIVO JSON");
+        
+        if(!(file.exists())){
+            System.out.println("ERROR: No existe ningún archivo JSON.");
+            System.out.println();
+            System.out.println(" * Asegúrese de crear un archivo con el nombre 'usuarios.json'");
+            System.out.println("   en el directorio raíz del programa antes de continuar");
+            System.out.println();
+            next();
+        }
+        
+        if(file.length()==0){
+            System.out.println("INFO: El archivo JSON está vacío");
+            next();
+        }else{
+            System.out.println("¿Desea cargar los datos almacenados en el archivo JSON? (s/n)");
+            System.out.print(">> ");
+            char opc = sc.nextLine().charAt(0);
+            
+            if(AskForYesOrNo(opc)){
+                UsuariosSerializer.readFromJSON();
+            }
+        }
+
+        clear();
         Thread.sleep(500);
         printHeader("CARGANDO SISTEMA...");
         String loadbar = "";
         for (int i = 0; i <= 100; i+=2) {
             System.out.print("\r" + i + "%  - | " + loadbar + " |");
             loadbar += "█";
-            Thread.sleep(50);
+            Thread.sleep(25);
         }
         System.out.println();
         System.out.println("===============================================================");
