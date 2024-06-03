@@ -1,6 +1,7 @@
 package src.Usuarios;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import src.Carrera.Carrera;
@@ -18,16 +19,42 @@ public class Coordinador extends Usuario {
     private Scanner sc = new Scanner(System.in);
     private String rfc;
     private double sueldo;
-    //private ArrayList<Materia> materiasImpartidas = new ArrayList<>();
+    private ArrayList<NombreDeMateria> materiasImpartidas = new ArrayList<>();
+    private int numeroMaterias = 0;
     public Coordinador(String nombre, String apellidos, LocalDate fechaNacimiento, String ciudad, String estado,
             String dirección, boolean esHombre, Rol rol, double sueldo, NombreDeCarrera nombreDeCarrera) {
         super(nombre, apellidos, fechaNacimiento, ciudad, estado, dirección, esHombre, rol, nombreDeCarrera);
         this.sueldo = sueldo;
+        this.materiasImpartidas = null;
         this.rfc = Tools.GenerateRFC(nombre, apellidos, fechaNacimiento);
     }
 
     public NombreDeCarrera getNombreCarrera() {
         return nombreCarrera;
+    }
+
+    public void agregarMateria(NombreDeMateria nombreDeMateria){
+        this.materiasImpartidas.add(nombreDeMateria);
+        this.numeroMaterias++;
+    }
+
+    public void quitarMateria(NombreDeMateria nombreDeMateria){
+        this.materiasImpartidas.remove(nombreDeMateria);
+        this.numeroMaterias--;
+    }
+
+    public ArrayList<NombreDeMateria> getMateriasImpartidas() {
+        return materiasImpartidas;
+    }
+
+    public static void printMaterias(){
+        int i = 1;
+        /*foreach(materias){
+            sout("i. "+nombreMateria.toString())
+            }
+         * 
+         * 
+        */
     }
     
     public void avanzarSemestre(){
@@ -245,6 +272,32 @@ public class Coordinador extends Usuario {
             } catch (Exception e) {
                 System.out.println("OPCION INVALIDA INGRESE OTRA");
             }
+        }
+    }
+
+    public void modificarMateriaCoordinador(){
+        NombreDeMateria nombreMateria;
+        if (materiasImpartidas.isEmpty()) {
+            System.out.println("No imparte ninguna materia!!");
+            return;
+        }
+        
+        boolean flag = true;
+
+        while (flag) {
+            Tools.printHeader("HA SELECCIONADO CAMBIAR UNA MATERIA QUE USTED IMPARTE A OTRO PROFESOR");
+            System.out.println("Que materia desea cambiar: ");
+            this.printMaterias();
+            System.out.print(">> ");
+
+            int opt = Tools.nextInt();
+            try {
+                Materia materia = FindID.findMateria(this.getMateriasImpartidas().get(opt));
+                materia.setProfesor(this, materia);
+                flag = false;    
+            } catch (Exception e) {
+                System.out.println("OPCION INVALIDA INGRESE OTRA");
+            }     
         }
     }
 
