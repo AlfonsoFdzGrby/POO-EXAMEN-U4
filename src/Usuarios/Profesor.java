@@ -9,9 +9,7 @@ import com.google.gson.annotations.Expose;
 
 import src.Carrera.util.NombreDeCarrera;
 import src.Grupos.util.LetraGrupo;
-import src.Materia.Materia;
 import src.Materia.util.NombreDeMateria;
-import src.Sistema.Sistema;
 import src.Sistema.util.Tools;
 import src.Usuarios.util.DatosComun;
 import src.Usuarios.util.FindID;

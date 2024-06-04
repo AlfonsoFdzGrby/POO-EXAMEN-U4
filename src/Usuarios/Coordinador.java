@@ -60,14 +60,24 @@ public class Coordinador extends Usuario {
         return materiasImpartidas;
     }
 
-    public static void printMaterias(){
+    public void printMateriasImpartidas(){
         int i = 1;
-        /*foreach(materias){
-            sout("i. "+nombreMateria.toString())
-            }
-         * 
-         * 
-        */
+        for (NombreDeMateria materia : materiasImpartidas) {
+            System.out.println(i + ". " + materia.toString());
+            i++;
+        }
+    }
+
+    public void printMateriasGeneral(){
+        int i = 1;
+        for (ArrayList<Semestre> semestres : Sistema.semestres.values()) {
+            for (Semestre semestre : semestres) {
+                for (Materia materia : semestre.getMaterias()) {
+                    System.out.println(i + ". " + materia.getNombre().toString());
+                    i++;
+                }
+            }  
+        }
     }
     
     public void avanzarSemestre(){
@@ -300,7 +310,7 @@ public class Coordinador extends Usuario {
         while (flag) {
             Tools.printHeader("HA SELECCIONADO CAMBIAR UNA MATERIA QUE USTED IMPARTE A OTRO PROFESOR");
             System.out.println("Que materia desea cambiar: ");
-            this.printMaterias();
+            this.printMateriasImpartidas();
             System.out.print(">> ");
 
             int opt = Tools.nextInt();

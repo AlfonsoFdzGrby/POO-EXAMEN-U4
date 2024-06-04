@@ -4,16 +4,12 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 import com.google.gson.annotations.Expose;
 
-import src.Carrera.Carrera;
 import src.Carrera.util.NombreDeCarrera;
 import src.Grupos.util.LetraGrupo;
-import src.Materia.Materia;
 import src.Materia.util.NombreDeMateria;
-import src.Semestre.Semestre;
 import src.Sistema.Sistema;
 import src.Sistema.util.Tools;
 import src.Usuarios.util.Calificaciones;
