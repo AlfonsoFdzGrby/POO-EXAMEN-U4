@@ -1,17 +1,81 @@
 package src.Sistema.util;
 
+import java.io.File;
 import java.time.*;
 import java.time.format.*;
 import java.util.*;
 
 import src.Carrera.util.NombreDeCarrera;
+import src.Sistema.Sistema;
+import src.Sistema.util.JSON.UsuariosSerializer;
+import src.Usuarios.Usuario;
+import src.Usuarios.util.Rol;
 
 public class Tools {
     private static Scanner sc = new Scanner(System.in);
     private static Random ran = new Random();
-    private static int indiceNControl = 0;
 
-    public static void printHeader(String header){
+    public static void printMindboxLogo(){
+        System.out.println("===============================================================");
+        System.out.println();
+        System.out.println("    ██      ██  ██              ██  ██");
+        System.out.println("    ████  ████                  ██  ██");
+        System.out.println("    ██  ██  ██  ██  █████    █████  █████    █████   ██ ██");
+        System.out.println("    ██      ██  ██  ██  ██  ██  ██  ██  ██  ██   ██   ███");
+        System.out.println("    ██      ██  ██  ██  ██   █████  █████    █████   ██ ██");
+        System.out.println();
+        System.out.println("===============================================================");
+        System.out.println();
+    }
+
+    public static void loadBar() throws Exception {
+        File file = new File("usuarios.json");
+        printHeader("CARGAR ARCHIVO JSON");
+        
+        if(!(file.exists())){
+            System.out.println("ERROR: No existe ningún archivo JSON.");
+            System.out.println();
+            System.out.println(" * Asegúrese de crear un archivo con el nombre 'usuarios.json'");
+            System.out.println("   en el directorio raíz del programa antes de continuar");
+            System.out.println();
+            next();
+        }
+        
+        if(file.length()==0){
+            System.out.println("INFO: El archivo JSON está vacío");
+            next();
+        }else{
+            System.out.println("¿Desea cargar los datos almacenados en el archivo JSON? (s/n)");
+            System.out.print(">> ");
+            char opc = sc.nextLine().charAt(0);
+            
+            if(AskForYesOrNo(opc)){
+                UsuariosSerializer.readFromJSON();
+            }
+        }
+
+        clear();
+        Thread.sleep(500);
+        printHeader("CARGANDO SISTEMA...");
+        String loadbar = "";
+        for (int i = 0; i <= 100; i+=2) {
+            System.out.print("\r" + i + "%  - | " + loadbar + " |");
+            loadbar += "█";
+            Thread.sleep(25);
+        }
+        System.out.println();
+        System.out.println("===============================================================");
+        System.out.println("¡Sistema cargado exitosamente!");
+        next();
+        clear();
+    }
+
+    public static void clear() throws Exception {
+        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+    }
+
+    public static void printHeader(String header) throws Exception {
+        clear();
         System.out.println("===============================================================");
         System.out.println(header);
         System.out.println("===============================================================");
@@ -192,20 +256,52 @@ public class Tools {
         return RFC;
     }
 
-    public static String GenerateCtrlNum(String nombre, LocalDate fechaRegistro, NombreDeCarrera nombreDeCarrera){
+    public static String GenerateCtrlNum(String nombre, LocalDate fechaRegistro, NombreDeCarrera nombreDeCarrera, Rol rol) {
         // Primer letra (por default)
-        String numCtrl = "I";
-
-        // Año (ultimos dos dígitos del año)
+        String numCtrl = "";
+    
+        switch (rol) {
+            case ALUMNO -> numCtrl += "I";
+            case PROFESOR -> numCtrl += "M";
+            case COORDINADOR -> numCtrl += "C";
+        }
+    
+        // Primera letra de su nombre
+        numCtrl += Character.toUpperCase(nombre.charAt(0));
+    
+        // Año (últimos dos dígitos del año)
         int año = fechaRegistro.getYear();
-        numCtrl += año%100;
-
+        numCtrl += String.format("%02d", año % 100);
+    
         // Abreviación carrera
         numCtrl += nombreDeCarrera.toString();
-
-        // Indice (REQUIERE DE UNA VALIDACIÓN)
-        numCtrl += indiceNControl;
-
+    
+        // Comienza con el índice 0
+        int indice = 0;
+    
+        // Crea un StringBuilder con el valor actual de numCtrl
+        StringBuilder numeroNuevo = new StringBuilder(numCtrl);
+    
+        // Buscar el mayor índice existente
+        for (ArrayList<Usuario> listaDeUsuarios : Sistema.usuarios.values()) {
+            for (Usuario usuario : listaDeUsuarios) {
+                String numeroExistente = usuario.getNumControl();
+                // Comprobar si el número de control existente no es nulo y tiene el mismo prefijo
+                if (numeroExistente != null && numeroExistente.startsWith(numCtrl)) {
+                    // Obtener el índice del número de control existente
+                    int indiceExistente = Character.getNumericValue(numeroExistente.charAt(7));
+                    // Actualizar el índice si el índice existente es mayor o igual
+                    if (indice <= indiceExistente) {
+                        indice = indiceExistente + 1;
+                    }
+                }
+            }
+        }
+    
+        // Añadir el índice final al número de control
+        numCtrl += indice;
+    
         return numCtrl;
     }
+    
 }
