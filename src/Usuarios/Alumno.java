@@ -317,7 +317,8 @@ public class Alumno extends Usuario {
         Tools.next(); 
     }
 
-    public static void registrarAlumno(){
+    public static void registrarAlumno() throws Exception {
+        Tools.printHeader("REGISTRAR ALUMNO");
         LetraGrupo grupo = null;
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         ArrayList<String> datosComun = DatosComun.datosComun();
@@ -345,6 +346,7 @@ public class Alumno extends Usuario {
         double promedio = 0;
 
         Alumno alumno = new Alumno(nombre, apellidos, fechaNacimiento, ciudad, estado, direccion, esHombre, nombreDeCarrera, numeroSemestre, grupo, promedio, contrasena);
+        Sistema.usuarios.get(Rol.ALUMNO).add(alumno);
         System.out.println("Alumno registrado correctamente!!");
         Tools.next();
     }

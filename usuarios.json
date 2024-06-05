@@ -2,7 +2,7 @@
   "alumnos": [],
   "profesores": [
     {
-      "rfc": "ABBS630215531",
+      "rfc": "ABBS630215780",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -12,7 +12,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ABBS630215HMIBDL51",
+      "curp": "ABBS630215HMIBDL80",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -21,7 +21,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "MOHA630215721",
+      "rfc": "MOHA630215720",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -31,7 +31,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "MOHA630215HMIRRL06",
+      "curp": "MOHA630215HMIRRL59",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -40,17 +40,20 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "VECR630215175",
+      "rfc": "VECR630215815",
       "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
+      "materiasImpartidas": [
+        "Programacion1",
+        "Programacion2"
+      ],
+      "numeroMaterias": 2,
       "nombreCarrera": "ISC",
       "nombre": "Rubén",
       "apellidos": "Vega Cano",
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "VECR630215HMIGNB09",
+      "curp": "VECR630215HMIGNB05",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -59,7 +62,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ZAAM630215267",
+      "rfc": "ZAAM630215879",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -69,7 +72,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ZAAM630215HMIRGR47",
+      "curp": "ZAAM630215HMIRGR98",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -78,7 +81,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "GAGP630215092",
+      "rfc": "GAGP630215224",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -88,7 +91,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "GAGP630215HMIRND27",
+      "curp": "GAGP630215HMIRND69",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -97,17 +100,20 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "RICE000409510",
+      "rfc": "RICE000409152",
       "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
+      "materiasImpartidas": [
+        "Probabilidad1",
+        "Probabilidad2"
+      ],
+      "numeroMaterias": 2,
       "nombreCarrera": "ISC",
       "nombre": "Eder",
       "apellidos": "Rivera Cisneros",
       "fechaNacimiento": "2000-04-09",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "RICE000409HMIVSD38",
+      "curp": "RICE000409HMIVSD87",
       "dirección": "Av. Acueducto #383",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -116,7 +122,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "JIMJ630215041",
+      "rfc": "JIMJ630215921",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -126,7 +132,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "JIMJ630215HMIMRS16",
+      "curp": "JIMJ630215HMIMRS59",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -135,7 +141,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "TORF630215462",
+      "rfc": "TORF630215486",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -145,7 +151,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "TORF630215HMIRZR76",
+      "curp": "TORF630215HMIRZR57",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -154,17 +160,21 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "MEVJ520215218",
+      "rfc": "MEVJ520215419",
       "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
+      "materiasImpartidas": [
+        "Calculo1",
+        "Calculo2",
+        "Calculo3"
+      ],
+      "numeroMaterias": 3,
       "nombreCarrera": "ISC",
       "nombre": "José Antonio",
       "apellidos": "Mejía Villaseñor",
       "fechaNacimiento": "1952-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "MEVJ520215HMIJLS27",
+      "curp": "MEVJ520215HMIJLS41",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -173,7 +183,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ABBS630215531",
+      "rfc": "ABBS630215780",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -183,7 +193,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ABBS630215HMIBDL51",
+      "curp": "ABBS630215HMIBDL80",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -192,7 +202,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "MOHA630215721",
+      "rfc": "MOHA630215720",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -202,7 +212,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "MOHA630215HMIRRL06",
+      "curp": "MOHA630215HMIRRL59",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -211,17 +221,20 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "VECR630215175",
+      "rfc": "VECR630215815",
       "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
+      "materiasImpartidas": [
+        "Programacion1",
+        "Programacion2"
+      ],
+      "numeroMaterias": 2,
       "nombreCarrera": "ISC",
       "nombre": "Rubén",
       "apellidos": "Vega Cano",
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "VECR630215HMIGNB09",
+      "curp": "VECR630215HMIGNB05",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -230,7 +243,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ZAAM630215267",
+      "rfc": "ZAAM630215879",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -240,7 +253,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ZAAM630215HMIRGR47",
+      "curp": "ZAAM630215HMIRGR98",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -249,7 +262,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "GAGP630215092",
+      "rfc": "GAGP630215224",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -259,7 +272,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "GAGP630215HMIRND27",
+      "curp": "GAGP630215HMIRND69",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -268,17 +281,20 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "RICE000409510",
+      "rfc": "RICE000409152",
       "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
+      "materiasImpartidas": [
+        "Probabilidad1",
+        "Probabilidad2"
+      ],
+      "numeroMaterias": 2,
       "nombreCarrera": "ISC",
       "nombre": "Eder",
       "apellidos": "Rivera Cisneros",
       "fechaNacimiento": "2000-04-09",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "RICE000409HMIVSD38",
+      "curp": "RICE000409HMIVSD87",
       "dirección": "Av. Acueducto #383",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -287,7 +303,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "JIMJ630215041",
+      "rfc": "JIMJ630215921",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -297,7 +313,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "JIMJ630215HMIMRS16",
+      "curp": "JIMJ630215HMIMRS59",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -306,7 +322,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "TORF630215462",
+      "rfc": "TORF630215486",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -316,7 +332,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "TORF630215HMIRZR76",
+      "curp": "TORF630215HMIRZR57",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -325,17 +341,21 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "MEVJ520215218",
+      "rfc": "MEVJ520215419",
       "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
+      "materiasImpartidas": [
+        "Calculo1",
+        "Calculo2",
+        "Calculo3"
+      ],
+      "numeroMaterias": 3,
       "nombreCarrera": "ISC",
       "nombre": "José Antonio",
       "apellidos": "Mejía Villaseñor",
       "fechaNacimiento": "1952-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "MEVJ520215HMIJLS27",
+      "curp": "MEVJ520215HMIJLS41",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -346,16 +366,20 @@
   ],
   "coordinadores": [
     {
-      "rfc": "ALZL731215257",
+      "rfc": "ALZL731215272",
       "sueldo": 30000.0,
-      "numeroMaterias": 0,
+      "materiasImpartidas": [
+        "Programacion3",
+        "Probabilidad3"
+      ],
+      "numeroMaterias": 2,
       "nombreCarrera": "ISC",
       "nombre": "Laura Nelly",
       "apellidos": "Alvarado Zamora",
       "fechaNacimiento": "1973-12-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ALZL731215MMILMR60",
+      "curp": "ALZL731215MMILMR14",
       "dirección": "Av. Acueducto #253",
       "fechaRegistro": "2024-06-04",
       "esHombre": false,
@@ -364,16 +388,27 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "RECF630205282",
+      "rfc": "RECF630205795",
       "sueldo": 30000.0,
-      "numeroMaterias": 0,
+      "materiasImpartidas": [
+        "Estadistica1",
+        "Estadistica2",
+        "Estadistica3",
+        "Contabilidad1",
+        "Contabilidad2",
+        "Contabilidad3",
+        "Calculo1",
+        "Calculo2",
+        "Calculo3"
+      ],
+      "numeroMaterias": 9,
       "nombreCarrera": "IMT",
       "nombre": "Francisco",
       "apellidos": "Reyes Calderón",
       "fechaNacimiento": "1963-02-05",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "RECF630205HMIYLR31",
+      "curp": "RECF630205HMIYLR97",
       "dirección": "Av. Madero #538",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -382,16 +417,49 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ALZL731215257",
+      "rfc": "LÓMJ830512327",
       "sueldo": 30000.0,
-      "numeroMaterias": 0,
+      "materiasImpartidas": [
+        "Redes1",
+        "Redes2",
+        "Redes3",
+        "Circuitos1",
+        "Circuitos2",
+        "Circuitos3",
+        "Calculo1",
+        "Calculo2",
+        "Calculo3"
+      ],
+      "numeroMaterias": 9,
+      "nombreCarrera": "ELC",
+      "nombre": "Javier",
+      "apellidos": "López Mateos",
+      "fechaNacimiento": "1983-05-12",
+      "ciudad": "Morelia",
+      "estado": "Michoacán",
+      "curp": "LÓMJ830512HMIÓTV42",
+      "dirección": "Perif. Paseo de la República #253",
+      "fechaRegistro": "2024-06-04",
+      "esHombre": true,
+      "rol": "COORDINADOR",
+      "numControl": "CJ83ELC0",
+      "contraseña": "1234"
+    },
+    {
+      "rfc": "ALZL731215272",
+      "sueldo": 30000.0,
+      "materiasImpartidas": [
+        "Programacion3",
+        "Probabilidad3"
+      ],
+      "numeroMaterias": 2,
       "nombreCarrera": "ISC",
       "nombre": "Laura Nelly",
       "apellidos": "Alvarado Zamora",
       "fechaNacimiento": "1973-12-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ALZL731215MMILMR60",
+      "curp": "ALZL731215MMILMR14",
       "dirección": "Av. Acueducto #253",
       "fechaRegistro": "2024-06-04",
       "esHombre": false,
@@ -400,34 +468,27 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ALZL731215257",
+      "rfc": "RECF630205795",
       "sueldo": 30000.0,
-      "numeroMaterias": 0,
-      "nombreCarrera": "ISC",
-      "nombre": "Laura Nelly",
-      "apellidos": "Alvarado Zamora",
-      "fechaNacimiento": "1973-12-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "ALZL731215MMILMR60",
-      "dirección": "Av. Acueducto #253",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": false,
-      "rol": "COORDINADOR",
-      "numControl": "CL73ISC0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "RECF630205282",
-      "sueldo": 30000.0,
-      "numeroMaterias": 0,
+      "materiasImpartidas": [
+        "Estadistica1",
+        "Estadistica2",
+        "Estadistica3",
+        "Contabilidad1",
+        "Contabilidad2",
+        "Contabilidad3",
+        "Calculo1",
+        "Calculo2",
+        "Calculo3"
+      ],
+      "numeroMaterias": 9,
       "nombreCarrera": "IMT",
       "nombre": "Francisco",
       "apellidos": "Reyes Calderón",
       "fechaNacimiento": "1963-02-05",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "RECF630205HMIYLR31",
+      "curp": "RECF630205HMIYLR97",
       "dirección": "Av. Madero #538",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -436,21 +497,32 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ALZL731215257",
+      "rfc": "LÓMJ830512327",
       "sueldo": 30000.0,
-      "numeroMaterias": 0,
-      "nombreCarrera": "ISC",
-      "nombre": "Laura Nelly",
-      "apellidos": "Alvarado Zamora",
-      "fechaNacimiento": "1973-12-15",
+      "materiasImpartidas": [
+        "Redes1",
+        "Redes2",
+        "Redes3",
+        "Circuitos1",
+        "Circuitos2",
+        "Circuitos3",
+        "Calculo1",
+        "Calculo2",
+        "Calculo3"
+      ],
+      "numeroMaterias": 9,
+      "nombreCarrera": "ELC",
+      "nombre": "Javier",
+      "apellidos": "López Mateos",
+      "fechaNacimiento": "1983-05-12",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ALZL731215MMILMR60",
-      "dirección": "Av. Acueducto #253",
+      "curp": "LÓMJ830512HMIÓTV42",
+      "dirección": "Perif. Paseo de la República #253",
       "fechaRegistro": "2024-06-04",
-      "esHombre": false,
+      "esHombre": true,
       "rol": "COORDINADOR",
-      "numControl": "CL73ISC0",
+      "numControl": "CJ83ELC0",
       "contraseña": "1234"
     }
   ],
@@ -465,19 +537,35 @@
             "nombre": "Probabilidad1",
             "id": 2,
             "carrera": "ISC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 3
+              },
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 4
+              }
+            ],
             "profesor": {
-              "rfc": "RICE000409510",
+              "rfc": "RICE000409152",
               "sueldo": 15000.0,
-              "materiasImpartidas": [],
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Probabilidad1",
+                "Probabilidad2"
+              ],
+              "numeroMaterias": 2,
               "nombreCarrera": "ISC",
               "nombre": "Eder",
               "apellidos": "Rivera Cisneros",
               "fechaNacimiento": "2000-04-09",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RICE000409HMIVSD38",
+              "curp": "RICE000409HMIVSD87",
               "dirección": "Av. Acueducto #383",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -490,19 +578,35 @@
             "nombre": "Programacion1",
             "id": 1,
             "carrera": "ISC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 1
+              },
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 2
+              }
+            ],
             "profesor": {
-              "rfc": "VECR630215175",
+              "rfc": "VECR630215815",
               "sueldo": 15000.0,
-              "materiasImpartidas": [],
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Programacion1",
+                "Programacion2"
+              ],
+              "numeroMaterias": 2,
               "nombreCarrera": "ISC",
               "nombre": "Rubén",
               "apellidos": "Vega Cano",
               "fechaNacimiento": "1963-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "VECR630215HMIGNB09",
+              "curp": "VECR630215HMIGNB05",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -515,19 +619,36 @@
             "nombre": "Calculo1",
             "id": 3,
             "carrera": "ISC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 5
+              },
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 6
+              }
+            ],
             "profesor": {
-              "rfc": "MEVJ520215218",
+              "rfc": "MEVJ520215419",
               "sueldo": 15000.0,
-              "materiasImpartidas": [],
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 3,
               "nombreCarrera": "ISC",
               "nombre": "José Antonio",
               "apellidos": "Mejía Villaseñor",
               "fechaNacimiento": "1952-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "MEVJ520215HMIJLS27",
+              "curp": "MEVJ520215HMIJLS41",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -547,19 +668,35 @@
             "nombre": "Probabilidad2",
             "id": 5,
             "carrera": "ISC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 9
+              },
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 10
+              }
+            ],
             "profesor": {
-              "rfc": "RICE000409510",
+              "rfc": "RICE000409152",
               "sueldo": 15000.0,
-              "materiasImpartidas": [],
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Probabilidad1",
+                "Probabilidad2"
+              ],
+              "numeroMaterias": 2,
               "nombreCarrera": "ISC",
               "nombre": "Eder",
               "apellidos": "Rivera Cisneros",
               "fechaNacimiento": "2000-04-09",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RICE000409HMIVSD38",
+              "curp": "RICE000409HMIVSD87",
               "dirección": "Av. Acueducto #383",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -572,19 +709,35 @@
             "nombre": "Programacion2",
             "id": 4,
             "carrera": "ISC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 7
+              },
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 8
+              }
+            ],
             "profesor": {
-              "rfc": "VECR630215175",
+              "rfc": "VECR630215815",
               "sueldo": 15000.0,
-              "materiasImpartidas": [],
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Programacion1",
+                "Programacion2"
+              ],
+              "numeroMaterias": 2,
               "nombreCarrera": "ISC",
               "nombre": "Rubén",
               "apellidos": "Vega Cano",
               "fechaNacimiento": "1963-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "VECR630215HMIGNB09",
+              "curp": "VECR630215HMIGNB05",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -597,19 +750,36 @@
             "nombre": "Calculo2",
             "id": 6,
             "carrera": "ISC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 11
+              },
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 12
+              }
+            ],
             "profesor": {
-              "rfc": "MEVJ520215218",
+              "rfc": "MEVJ520215419",
               "sueldo": 15000.0,
-              "materiasImpartidas": [],
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 3,
               "nombreCarrera": "ISC",
               "nombre": "José Antonio",
               "apellidos": "Mejía Villaseñor",
               "fechaNacimiento": "1952-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "MEVJ520215HMIJLS27",
+              "curp": "MEVJ520215HMIJLS41",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -629,18 +799,35 @@
             "nombre": "Probabilidad3",
             "id": 8,
             "carrera": "ISC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 15
+              },
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 16
+              }
+            ],
             "profesor": {
-              "rfc": "ALZL731215257",
+              "rfc": "ALZL731215272",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Programacion3",
+                "Probabilidad3"
+              ],
+              "numeroMaterias": 2,
               "nombreCarrera": "ISC",
               "nombre": "Laura Nelly",
               "apellidos": "Alvarado Zamora",
               "fechaNacimiento": "1973-12-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "ALZL731215MMILMR60",
+              "curp": "ALZL731215MMILMR14",
               "dirección": "Av. Acueducto #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": false,
@@ -653,18 +840,35 @@
             "nombre": "Programacion3",
             "id": 7,
             "carrera": "ISC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 13
+              },
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 14
+              }
+            ],
             "profesor": {
-              "rfc": "ALZL731215257",
+              "rfc": "ALZL731215272",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Programacion3",
+                "Probabilidad3"
+              ],
+              "numeroMaterias": 2,
               "nombreCarrera": "ISC",
               "nombre": "Laura Nelly",
               "apellidos": "Alvarado Zamora",
               "fechaNacimiento": "1973-12-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "ALZL731215MMILMR60",
+              "curp": "ALZL731215MMILMR14",
               "dirección": "Av. Acueducto #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": false,
@@ -677,19 +881,36 @@
             "nombre": "Calculo3",
             "id": 9,
             "carrera": "ISC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 17
+              },
+              {
+                "nombreDeCarrera": "ISC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 18
+              }
+            ],
             "profesor": {
-              "rfc": "MEVJ520215218",
+              "rfc": "MEVJ520215419",
               "sueldo": 15000.0,
-              "materiasImpartidas": [],
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 3,
               "nombreCarrera": "ISC",
               "nombre": "José Antonio",
               "apellidos": "Mejía Villaseñor",
               "fechaNacimiento": "1952-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "MEVJ520215HMIJLS27",
+              "curp": "MEVJ520215HMIJLS41",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -711,18 +932,42 @@
             "nombre": "Redes1",
             "id": 19,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 37
+              },
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 38
+              }
+            ],
             "profesor": {
-              "rfc": "LÓMJ830512779",
+              "rfc": "LÓMJ830512327",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Redes1",
+                "Redes2",
+                "Redes3",
+                "Circuitos1",
+                "Circuitos2",
+                "Circuitos3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "ELC",
               "nombre": "Javier",
               "apellidos": "López Mateos",
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV84",
+              "curp": "LÓMJ830512HMIÓTV42",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -735,18 +980,42 @@
             "nombre": "Circuitos1",
             "id": 20,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 39
+              },
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 40
+              }
+            ],
             "profesor": {
-              "rfc": "LÓMJ830512779",
+              "rfc": "LÓMJ830512327",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Redes1",
+                "Redes2",
+                "Redes3",
+                "Circuitos1",
+                "Circuitos2",
+                "Circuitos3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "ELC",
               "nombre": "Javier",
               "apellidos": "López Mateos",
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV84",
+              "curp": "LÓMJ830512HMIÓTV42",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -759,18 +1028,42 @@
             "nombre": "Calculo1",
             "id": 21,
             "carrera": "ELC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 41
+              },
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 42
+              }
+            ],
             "profesor": {
-              "rfc": "LÓMJ830512779",
+              "rfc": "LÓMJ830512327",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Redes1",
+                "Redes2",
+                "Redes3",
+                "Circuitos1",
+                "Circuitos2",
+                "Circuitos3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "ELC",
               "nombre": "Javier",
               "apellidos": "López Mateos",
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV84",
+              "curp": "LÓMJ830512HMIÓTV42",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -790,18 +1083,42 @@
             "nombre": "Redes2",
             "id": 22,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 43
+              },
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 44
+              }
+            ],
             "profesor": {
-              "rfc": "LÓMJ830512779",
+              "rfc": "LÓMJ830512327",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Redes1",
+                "Redes2",
+                "Redes3",
+                "Circuitos1",
+                "Circuitos2",
+                "Circuitos3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "ELC",
               "nombre": "Javier",
               "apellidos": "López Mateos",
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV84",
+              "curp": "LÓMJ830512HMIÓTV42",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -814,18 +1131,42 @@
             "nombre": "Circuitos2",
             "id": 23,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 45
+              },
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 46
+              }
+            ],
             "profesor": {
-              "rfc": "LÓMJ830512779",
+              "rfc": "LÓMJ830512327",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Redes1",
+                "Redes2",
+                "Redes3",
+                "Circuitos1",
+                "Circuitos2",
+                "Circuitos3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "ELC",
               "nombre": "Javier",
               "apellidos": "López Mateos",
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV84",
+              "curp": "LÓMJ830512HMIÓTV42",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -838,18 +1179,42 @@
             "nombre": "Calculo2",
             "id": 24,
             "carrera": "ELC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 47
+              },
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 48
+              }
+            ],
             "profesor": {
-              "rfc": "LÓMJ830512779",
+              "rfc": "LÓMJ830512327",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Redes1",
+                "Redes2",
+                "Redes3",
+                "Circuitos1",
+                "Circuitos2",
+                "Circuitos3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "ELC",
               "nombre": "Javier",
               "apellidos": "López Mateos",
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV84",
+              "curp": "LÓMJ830512HMIÓTV42",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -869,18 +1234,42 @@
             "nombre": "Redes3",
             "id": 25,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 49
+              },
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 50
+              }
+            ],
             "profesor": {
-              "rfc": "LÓMJ830512779",
+              "rfc": "LÓMJ830512327",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Redes1",
+                "Redes2",
+                "Redes3",
+                "Circuitos1",
+                "Circuitos2",
+                "Circuitos3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "ELC",
               "nombre": "Javier",
               "apellidos": "López Mateos",
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV84",
+              "curp": "LÓMJ830512HMIÓTV42",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -893,18 +1282,42 @@
             "nombre": "Circuitos3",
             "id": 26,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 51
+              },
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 52
+              }
+            ],
             "profesor": {
-              "rfc": "LÓMJ830512779",
+              "rfc": "LÓMJ830512327",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Redes1",
+                "Redes2",
+                "Redes3",
+                "Circuitos1",
+                "Circuitos2",
+                "Circuitos3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "ELC",
               "nombre": "Javier",
               "apellidos": "López Mateos",
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV84",
+              "curp": "LÓMJ830512HMIÓTV42",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -917,18 +1330,42 @@
             "nombre": "Calculo3",
             "id": 27,
             "carrera": "ELC",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 53
+              },
+              {
+                "nombreDeCarrera": "ELC",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 54
+              }
+            ],
             "profesor": {
-              "rfc": "LÓMJ830512779",
+              "rfc": "LÓMJ830512327",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Redes1",
+                "Redes2",
+                "Redes3",
+                "Circuitos1",
+                "Circuitos2",
+                "Circuitos3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "ELC",
               "nombre": "Javier",
               "apellidos": "López Mateos",
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV84",
+              "curp": "LÓMJ830512HMIÓTV42",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -971,18 +1408,42 @@
             "nombre": "Estadistica1",
             "id": 10,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 19
+              },
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 20
+              }
+            ],
             "profesor": {
-              "rfc": "RECF630205282",
+              "rfc": "RECF630205795",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Estadistica1",
+                "Estadistica2",
+                "Estadistica3",
+                "Contabilidad1",
+                "Contabilidad2",
+                "Contabilidad3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "IMT",
               "nombre": "Francisco",
               "apellidos": "Reyes Calderón",
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR31",
+              "curp": "RECF630205HMIYLR97",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -995,18 +1456,42 @@
             "nombre": "Contabilidad1",
             "id": 11,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 21
+              },
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 22
+              }
+            ],
             "profesor": {
-              "rfc": "RECF630205282",
+              "rfc": "RECF630205795",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Estadistica1",
+                "Estadistica2",
+                "Estadistica3",
+                "Contabilidad1",
+                "Contabilidad2",
+                "Contabilidad3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "IMT",
               "nombre": "Francisco",
               "apellidos": "Reyes Calderón",
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR31",
+              "curp": "RECF630205HMIYLR97",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1019,18 +1504,42 @@
             "nombre": "Calculo1",
             "id": 12,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 23
+              },
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 24
+              }
+            ],
             "profesor": {
-              "rfc": "RECF630205282",
+              "rfc": "RECF630205795",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Estadistica1",
+                "Estadistica2",
+                "Estadistica3",
+                "Contabilidad1",
+                "Contabilidad2",
+                "Contabilidad3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "IMT",
               "nombre": "Francisco",
               "apellidos": "Reyes Calderón",
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR31",
+              "curp": "RECF630205HMIYLR97",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1050,18 +1559,42 @@
             "nombre": "Estadistica2",
             "id": 13,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 25
+              },
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 26
+              }
+            ],
             "profesor": {
-              "rfc": "RECF630205282",
+              "rfc": "RECF630205795",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Estadistica1",
+                "Estadistica2",
+                "Estadistica3",
+                "Contabilidad1",
+                "Contabilidad2",
+                "Contabilidad3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "IMT",
               "nombre": "Francisco",
               "apellidos": "Reyes Calderón",
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR31",
+              "curp": "RECF630205HMIYLR97",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1074,18 +1607,42 @@
             "nombre": "Contabilidad2",
             "id": 14,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 27
+              },
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 28
+              }
+            ],
             "profesor": {
-              "rfc": "RECF630205282",
+              "rfc": "RECF630205795",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Estadistica1",
+                "Estadistica2",
+                "Estadistica3",
+                "Contabilidad1",
+                "Contabilidad2",
+                "Contabilidad3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "IMT",
               "nombre": "Francisco",
               "apellidos": "Reyes Calderón",
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR31",
+              "curp": "RECF630205HMIYLR97",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1098,18 +1655,42 @@
             "nombre": "Calculo2",
             "id": 15,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 29
+              },
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 30
+              }
+            ],
             "profesor": {
-              "rfc": "RECF630205282",
+              "rfc": "RECF630205795",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Estadistica1",
+                "Estadistica2",
+                "Estadistica3",
+                "Contabilidad1",
+                "Contabilidad2",
+                "Contabilidad3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "IMT",
               "nombre": "Francisco",
               "apellidos": "Reyes Calderón",
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR31",
+              "curp": "RECF630205HMIYLR97",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1129,18 +1710,42 @@
             "nombre": "Estadistica3",
             "id": 16,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 31
+              },
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 32
+              }
+            ],
             "profesor": {
-              "rfc": "RECF630205282",
+              "rfc": "RECF630205795",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Estadistica1",
+                "Estadistica2",
+                "Estadistica3",
+                "Contabilidad1",
+                "Contabilidad2",
+                "Contabilidad3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "IMT",
               "nombre": "Francisco",
               "apellidos": "Reyes Calderón",
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR31",
+              "curp": "RECF630205HMIYLR97",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1153,18 +1758,42 @@
             "nombre": "Contabilidad3",
             "id": 17,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 33
+              },
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 34
+              }
+            ],
             "profesor": {
-              "rfc": "RECF630205282",
+              "rfc": "RECF630205795",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Estadistica1",
+                "Estadistica2",
+                "Estadistica3",
+                "Contabilidad1",
+                "Contabilidad2",
+                "Contabilidad3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "IMT",
               "nombre": "Francisco",
               "apellidos": "Reyes Calderón",
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR31",
+              "curp": "RECF630205HMIYLR97",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1177,18 +1806,42 @@
             "nombre": "Calculo3",
             "id": 18,
             "carrera": "IMT",
-            "grupos": [],
+            "grupos": [
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "A",
+                "id": 35
+              },
+              {
+                "nombreDeCarrera": "IMT",
+                "alumnos": [],
+                "grupo": "B",
+                "id": 36
+              }
+            ],
             "profesor": {
-              "rfc": "RECF630205282",
+              "rfc": "RECF630205795",
               "sueldo": 30000.0,
-              "numeroMaterias": 0,
+              "materiasImpartidas": [
+                "Estadistica1",
+                "Estadistica2",
+                "Estadistica3",
+                "Contabilidad1",
+                "Contabilidad2",
+                "Contabilidad3",
+                "Calculo1",
+                "Calculo2",
+                "Calculo3"
+              ],
+              "numeroMaterias": 9,
               "nombreCarrera": "IMT",
               "nombre": "Francisco",
               "apellidos": "Reyes Calderón",
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR31",
+              "curp": "RECF630205HMIYLR97",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,

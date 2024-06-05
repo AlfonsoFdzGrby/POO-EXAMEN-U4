@@ -191,6 +191,7 @@ public class Profesor extends Usuario {
 
         Profesor profesor = new Profesor(nombre, apellidos, fechaNacimiento, ciudad, estado, direccion, nombreDeCarrera, esHombre, sueldo, nombreDeCarrera, materiasImpartidas, contrasena);
         System.out.println("Profesor registrado correctamente!!");
+        Sistema.usuarios.get(Rol.PROFESOR).add(profesor);
         Tools.next();
     }
 

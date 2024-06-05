@@ -19,16 +19,25 @@ public class DatosComun{
         System.out.print(">> ");
         String name = sc.nextLine();
 
-        System.out.println("Ingrese los apellidos de la persona (paterno materno): ");
-        System.out.print(">> ");
-        String apellidos = sc.nextLine();
+        String apellidos = "";
+        while(true){
+            System.out.println("Ingrese los apellidos de la persona (paterno materno): ");
+            System.out.print(">> ");
+            apellidos = sc.nextLine();
+            String[] apellidos2 = apellidos.split(" ");
+            if(apellidos2.length<2){
+                System.out.println("Por favor ingrese ambos de sus apellidos");
+            }else{
+                break;
+            }
+        }
+        
 
         System.out.println("La persona es hombre? (S/N): ");
         System.out.print(">> ");
-        String YoN = sc.next();
+        String YoN = sc.nextLine();
 
-        System.out.println("Ingrese la fecha de nacimiento: (dd-MM-yyyy)");
-        System.out.print(">> ");
+        System.out.println("Ingrese la fecha de nacimiento:");
         LocalDate fecha = Tools.askForDate();
 
         System.out.println("Ingrese la ciudad de residencia de la persona: ");
@@ -43,7 +52,7 @@ public class DatosComun{
         System.out.print(">> ");
         String direccion = sc.nextLine();
 
-        System.out.println("Ingrese la contrasena con la que contara el usuario: ");
+        System.out.println("Ingrese la contraseña con la que contará el usuario: ");
         System.out.print(">> ");
         String contrasena = sc.nextLine();
 

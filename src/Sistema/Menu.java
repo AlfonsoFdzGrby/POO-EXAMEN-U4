@@ -11,7 +11,7 @@ import src.Usuarios.util.UsuarioEnSesion;
 public class Menu {
     private static Scanner sc = new Scanner(System.in);
     private static UsuarioEnSesion usuarioEnSesion = UsuarioEnSesion.getInstancia();
-    private static Sistema sistema = new Sistema(false);
+    private static Sistema sistema = new Sistema(true);
 
     public static void ejecutarMenu() throws Exception {
         Tools.loadBar();
@@ -22,7 +22,8 @@ public class Menu {
             System.out.println("1. Alumno");
             System.out.println("2. Profesor");
             System.out.println("3. Coordinador");
-            System.out.println("4. Salir del programa");
+            System.out.println("4. Guardar cambios en archivo JSON");
+            System.out.println("5. Salir del programa");
             System.out.print(">> ");
             int opc = Tools.nextInt();
             switch (opc) {
@@ -96,6 +97,11 @@ public class Menu {
                 }
 
                 case 4 -> {
+                    File file = new File("usuarios.json");
+                    UsuariosSerializer.writeToJSON();
+                }
+
+                case 5 -> {
                     File file = new File("usuarios.json");
                     if(file.length()==0){
                         UsuariosSerializer.writeToJSON(); 
@@ -177,9 +183,10 @@ public class Menu {
             System.out.println("5. Cambiar Profesor de Materia");
             System.out.println("6. Delegar Materia a Otro Profesor");
             System.out.println("7. Ver Informacion Sistema");
-            System.out.println("8. Eliminar Usuarios");
-            System.out.println("9. Modificar Usuarios");
-            System.out.println("10. Cerrar sesión");
+            System.out.println("8. Crear Usuario");
+            System.out.println("9. Eliminar Usuarios");
+            System.out.println("10. Modificar Usuarios");
+            System.out.println("11. Cerrar sesión");
             System.out.print(">> ");
             int opc = Tools.nextInt();
             switch (opc) {
@@ -190,9 +197,10 @@ public class Menu {
                 case 5 -> coordinador.modificarProfesMaterias();
                 case 6 -> coordinador.modificarMateriaCoordinador();
                 case 7 -> menuPrints();
-                case 8 -> menuEliminaciones();
-                case 9 -> menuModificaciones();
-                case 10 -> usuarioEnSesion.setUsuario(null);
+                case 8 -> Alumno.registrarAlumno();
+                case 9 -> menuEliminaciones();
+                case 10 -> menuModificaciones();
+                case 11 -> usuarioEnSesion.setUsuario(null);
                 default -> System.out.println("Opcion ingresada incorrecta!!");
             }
         }

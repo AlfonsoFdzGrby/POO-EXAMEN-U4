@@ -37,7 +37,7 @@ public class Coordinador extends Usuario {
             String dirección, boolean esHombre, Rol rol, double sueldo, NombreDeCarrera nombreDeCarrera, String contraseña) {
         super(nombre, apellidos, fechaNacimiento, ciudad, estado, dirección, esHombre, rol, nombreDeCarrera, contraseña);
         this.sueldo = sueldo;
-        this.materiasImpartidas = null;
+        this.materiasImpartidas = new ArrayList<>();
         this.rfc = Tools.GenerateRFC(nombre, apellidos, fechaNacimiento);
         this.numControl = Tools.GenerateCtrlNum(nombre, fechaNacimiento, nombreDeCarrera, rol);
     }

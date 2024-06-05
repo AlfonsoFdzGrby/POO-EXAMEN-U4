@@ -3,14 +3,13 @@ package src.Usuarios.util;
 import src.Materia.Materia;
 import src.Materia.util.NombreDeMateria;
 import src.Sistema.Sistema;
-import src.Usuarios.Profesor;
-import src.Usuarios.Usuario;
+import src.Usuarios.*;
 
 public class FindID {
     
     public static Usuario findControlNumber(String numControl, Rol rol){
         for (Usuario usuario : Sistema.usuarios.get(rol)) {
-            if (usuario.getNumControl() == numControl) {
+            if (usuario.getNumControl().equals(numControl)) {
                 return usuario;
             }
         }
