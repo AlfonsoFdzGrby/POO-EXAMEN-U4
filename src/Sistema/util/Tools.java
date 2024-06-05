@@ -25,17 +25,55 @@ public class Tools {
         System.out.print(ANSI_CLEAR_LINE);    // Borra la línea actual
     }
 
-    public static void printMindboxLogo(){
-        System.out.println("===============================================================");
+    public static void printMindboxLogo() throws Exception {
+        //imprimir separación
+        
+        String header = "";
+        for (int i = 0; i < 64; i++) {
+            header+="=";
+            System.out.print("\r" + header);
+            Thread.sleep(5);
+        }
         System.out.println();
-        System.out.println("    ██      ██  ██              ██  ██");
-        System.out.println("    ████  ████                  ██  ██");
-        System.out.println("    ██  ██  ██  ██  █████    █████  █████    █████   ██ ██");
-        System.out.println("    ██      ██  ██  ██  ██  ██  ██  ██  ██  ██   ██   ███");
-        System.out.println("    ██      ██  ██  ██  ██   █████  █████    █████   ██ ██");
         System.out.println();
-        System.out.println("===============================================================");
+        header = "";
+
+        //imprimir "MINDBOX"
+        String parte = "";
+
+        for (int i = 0; i < 5; i++) {
+            String textoanimado = "";
+
+            switch (i) {
+                case 0 -> parte = "    ██      ██  ██              ██  ██";
+                case 1 -> parte = "    ████  ████                  ██  ██";
+                case 2 -> parte = "    ██  ██  ██  ██  █████    █████  █████    █████   ██ ██";
+                case 3 -> parte = "    ██      ██  ██  ██  ██  ██  ██  ██  ██  ██   ██   ███";
+                case 4 -> parte = "    ██      ██  ██  ██  ██   █████  █████    █████   ██ ██";
+            }
+
+            for (int j = 0; j < parte.length(); j++) {
+                char caracter = parte.charAt(j);
+                textoanimado += caracter;
+                System.out.print("\r" + textoanimado);
+                Thread.sleep(3);
+            }
+
+            System.out.println();
+        }
         System.out.println();
+
+        //imprimir separación
+
+        for (int i = 0; i < 64; i++) {
+            header+="=";
+            System.out.print("\r" + header);
+            Thread.sleep(3);
+        }
+        System.out.println();
+        System.out.println();
+
+        
     }
 
     public static void loadBar() throws Exception {
