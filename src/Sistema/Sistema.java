@@ -55,13 +55,13 @@ public class Sistema {
             Profesor profesor2_ISC = new Profesor("Eder", "Rivera Cisneros", LocalDate.of(2000, 4, 9), "Morelia", "Michoacán", "Av. Acueducto #383", NombreDeCarrera.ISC, true, 15000, NombreDeCarrera.ISC, new ArrayList<>(), "1234");
             Profesor profesor3_ISC = new Profesor("José Antonio", "Mejía Villaseñor", LocalDate.of(1952, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.ISC, true, 15000, NombreDeCarrera.ISC, new ArrayList<>(), "1234");
             
-            Profesor profesor1_IMT = new Profesor("Alfredo", "Morales Hernández", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.ISC, true, 15000, NombreDeCarrera.IMT, new ArrayList<>(), "1234");
-            Profesor profesor2_IMT = new Profesor("Pedro", "Garnica González", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.ISC, true, 15000, NombreDeCarrera.IMT, new ArrayList<>(), "1234");
-            Profesor profesor3_IMT = new Profesor("Fernando Manuel", "Torres Ruiz", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.ISC, true, 15000, NombreDeCarrera.IMT, new ArrayList<>(), "1234");
+            Profesor profesor1_IMT = new Profesor("Alfredo", "Morales Hernández", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.IMT, true, 15000, NombreDeCarrera.IMT, new ArrayList<>(), "1234");
+            Profesor profesor2_IMT = new Profesor("Pedro", "Garnica González", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.IMT, true, 15000, NombreDeCarrera.IMT, new ArrayList<>(), "1234");
+            Profesor profesor3_IMT = new Profesor("Fernando Manuel", "Torres Ruiz", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.IMT, true, 15000, NombreDeCarrera.IMT, new ArrayList<>(), "1234");
             
-            Profesor profesor1_ELC = new Profesor("Salvador", "Aburto Bedolla", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.ISC, true, 15000, NombreDeCarrera.ELC, new ArrayList<>(), "1234");
-            Profesor profesor2_ELC = new Profesor("Martín", "Zaragoza Aguirre", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.ISC, true, 15000, NombreDeCarrera.ELC, new ArrayList<>(), "1234");
-            Profesor profesor3_ELC = new Profesor("José Alfredo", "Jiménez Murillo", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.ISC, true, 15000, NombreDeCarrera.ELC, new ArrayList<>(), "1234");
+            Profesor profesor1_ELC = new Profesor("Salvador", "Aburto Bedolla", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.IMT, true, 15000, NombreDeCarrera.ELC, new ArrayList<>(), "1234");
+            Profesor profesor2_ELC = new Profesor("Martín", "Zaragoza Aguirre", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.IMT, true, 15000, NombreDeCarrera.ELC, new ArrayList<>(), "1234");
+            Profesor profesor3_ELC = new Profesor("José Alfredo", "Jiménez Murillo", LocalDate.of(1963, 2, 15), "Morelia", "Michoacán", "Av. Acueducto #354", NombreDeCarrera.IMT, true, 15000, NombreDeCarrera.ELC, new ArrayList<>(), "1234");
 
             profesor1_ISC.agregarMateria(NombreDeMateria.Programacion1);
             profesor1_ISC.agregarMateria(NombreDeMateria.Programacion2);
