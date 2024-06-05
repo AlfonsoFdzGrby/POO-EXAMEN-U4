@@ -134,18 +134,18 @@ public class Sistema {
             //CREACIÓN DE MATERIAS - ELC
 
             //Semestre 1
-            Materia redes1 = new Materia(NombreDeCarrera.IMT, coordELC, NombreDeMateria.Redes1, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
-            Materia circuitos1 = new Materia(NombreDeCarrera.IMT, coordELC, NombreDeMateria.Circuitos1, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
+            Materia redes1 = new Materia(NombreDeCarrera.ELC, coordELC, NombreDeMateria.Redes1, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
+            Materia circuitos1 = new Materia(NombreDeCarrera.ELC, coordELC, NombreDeMateria.Circuitos1, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
             Materia calculo1_ELC = new Materia(NombreDeCarrera.ELC, coordELC, NombreDeMateria.Calculo1, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
 
             //Semestre 2
-            Materia redes2 = new Materia(NombreDeCarrera.IMT, coordELC, NombreDeMateria.Redes2, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
-            Materia circuitos2 = new Materia(NombreDeCarrera.IMT, coordELC, NombreDeMateria.Circuitos2, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
+            Materia redes2 = new Materia(NombreDeCarrera.ELC, coordELC, NombreDeMateria.Redes2, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
+            Materia circuitos2 = new Materia(NombreDeCarrera.ELC, coordELC, NombreDeMateria.Circuitos2, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
             Materia calculo2_ELC = new Materia(NombreDeCarrera.ELC, coordELC, NombreDeMateria.Calculo2, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
 
             //Semestre 3
-            Materia redes3 = new Materia(NombreDeCarrera.IMT, coordELC, NombreDeMateria.Redes3, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
-            Materia circuitos3 = new Materia(NombreDeCarrera.IMT, coordELC, NombreDeMateria.Circuitos3, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
+            Materia redes3 = new Materia(NombreDeCarrera.ELC, coordELC, NombreDeMateria.Redes3, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
+            Materia circuitos3 = new Materia(NombreDeCarrera.ELC, coordELC, NombreDeMateria.Circuitos3, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
             Materia calculo3_ELC = new Materia(NombreDeCarrera.ELC, coordELC, NombreDeMateria.Calculo3, new ArrayList<>(Arrays.asList(new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.A), new Grupo(NombreDeCarrera.ELC, new ArrayList<>(), LetraGrupo.B))));
 
             //Los arraylists se quedan en blanco porque dependiendo del número de alumnos en el grupo A, se crea o no el B
@@ -156,14 +156,14 @@ public class Sistema {
             Semestre semestre3ISC = new Semestre(NombreDeCarrera.ISC, 3 , new ArrayList<>(Arrays.asList(probabilidad3, programacion3, calculo3_ISC)));
 
             //Semestres IMT
-            Semestre semestre1IMT = new Semestre(NombreDeCarrera.ISC, 1 , new ArrayList<>(Arrays.asList(estadistica1, contabilidad1, calculo1_IMT)));
-            Semestre semestre2IMT = new Semestre(NombreDeCarrera.ISC, 2 , new ArrayList<>(Arrays.asList(estadistica2, contabilidad2, calculo2_IMT)));
-            Semestre semestre3IMT = new Semestre(NombreDeCarrera.ISC, 3 , new ArrayList<>(Arrays.asList(estadistica3, contabilidad3, calculo3_IMT)));
+            Semestre semestre1IMT = new Semestre(NombreDeCarrera.IMT, 1 , new ArrayList<>(Arrays.asList(estadistica1, contabilidad1, calculo1_IMT)));
+            Semestre semestre2IMT = new Semestre(NombreDeCarrera.IMT, 2 , new ArrayList<>(Arrays.asList(estadistica2, contabilidad2, calculo2_IMT)));
+            Semestre semestre3IMT = new Semestre(NombreDeCarrera.IMT, 3 , new ArrayList<>(Arrays.asList(estadistica3, contabilidad3, calculo3_IMT)));
 
             //Semestres ELC
-            Semestre semestre1ELC = new Semestre(NombreDeCarrera.ISC, 1 , new ArrayList<>(Arrays.asList(redes1, circuitos1, calculo1_ELC)));
-            Semestre semestre2ELC = new Semestre(NombreDeCarrera.ISC, 2 , new ArrayList<>(Arrays.asList(redes2, circuitos2, calculo2_ELC)));
-            Semestre semestre3ELC = new Semestre(NombreDeCarrera.ISC, 3 , new ArrayList<>(Arrays.asList(redes3, circuitos3, calculo3_ELC)));
+            Semestre semestre1ELC = new Semestre(NombreDeCarrera.ELC, 1 , new ArrayList<>(Arrays.asList(redes1, circuitos1, calculo1_ELC)));
+            Semestre semestre2ELC = new Semestre(NombreDeCarrera.ELC, 2 , new ArrayList<>(Arrays.asList(redes2, circuitos2, calculo2_ELC)));
+            Semestre semestre3ELC = new Semestre(NombreDeCarrera.ELC, 3 , new ArrayList<>(Arrays.asList(redes3, circuitos3, calculo3_ELC)));
 
             //Semestre "Graduados"
             Semestre semestreGraduados = new Semestre(NombreDeCarrera.GRADUADOS, 4 , new ArrayList<>(Arrays.asList(graduados)));
