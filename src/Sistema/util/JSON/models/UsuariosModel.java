@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import src.Carrera.util.NombreDeCarrera;
+import src.Materia.util.NombreDeMateria;
 import src.Semestre.Semestre;
-import src.Sistema.Sistema;
 import src.Usuarios.*;
+import src.Usuarios.util.Calificaciones;
 import src.Usuarios.util.Rol;
 
 public class UsuariosModel {

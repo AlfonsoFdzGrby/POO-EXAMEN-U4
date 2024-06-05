@@ -8,6 +8,7 @@ import com.google.gson.annotations.Expose;
 import src.Carrera.util.NombreDeCarrera;
 import src.Grupos.Grupo;
 import src.Materia.util.NombreDeMateria;
+import src.Sistema.Sistema;
 import src.Sistema.util.Tools;
 import src.Usuarios.Alumno;
 import src.Usuarios.Coordinador;
@@ -117,7 +118,7 @@ public class Materia {
         double calificacion = -1;
 
         for (Grupo grupo : grupos) {
-            for (Alumno alumno : grupo.getAlumnos()) {
+            for (Alumno alumno : Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario).filter(alumno -> alumno.getCalificaciones().containsKey(this.getNombre())).toList()) {
                 System.out.println(alumno.getNombreCompleto() + " Promedio: " + alumno.getPromedio());
                 alumno.getCalificaciones().get(this.getNombre()).toString();
 
@@ -130,6 +131,7 @@ public class Materia {
                 } while (calificacion < 0);
 
                 alumno.getCalificaciones().get(this.getNombre()).setCalificacion(calificacion);
+                System.out.println(alumno.getCalificaciones().get(this.nombre).getCalificacion());
                 alumno.calcularPromedio();
             }
         }

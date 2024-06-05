@@ -15,6 +15,7 @@ import src.Sistema.util.Tools;
 import src.Usuarios.Alumno;
 import src.Usuarios.Usuario;
 import src.Usuarios.util.Calificaciones;
+import src.Usuarios.util.Rol;
 
 public class Semestre {
     @Expose(serialize = false, deserialize = false)
@@ -61,7 +62,7 @@ public class Semestre {
             Semestre semestreCopy = Sistema.semestres.get(semestre.nombreDeCarrera).get(semestre.numSemestre-1);
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 2; j++) {
-                    for (Alumno alumno : semestreCopy.materias.get(i).getGrupos().get(j).getAlumnos()) {
+                    for (Alumno alumno : Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario).toList()) {
                         alumno.acreditarMaterias();
                         if (alumno.isAcredito()) {
                             Sistema.semestres.get(semestre.nombreDeCarrera).get(semestre.numSemestre-1).materias.get(i).getGrupos().get(j).getAlumnos().remove(alumno);

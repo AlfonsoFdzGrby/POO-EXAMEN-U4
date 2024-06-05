@@ -84,7 +84,7 @@ public class Menu {
 
                         if(usuario.getNumControl().charAt(0)=='C'){
                             usuarioEnSesion.setUsuario(usuario);
-                            Tools.printHeader("INGRESAR - PROFESOR");
+                            Tools.printHeader("INGRESAR - COORDINADOR");
                             System.out.println("Se ha iniciado sesión correctamente con el");
                             System.out.println("coordinador " + usuarioEnSesion.getUsuarioActual().getNombreCompleto() + ".");
                             Tools.next();
@@ -97,7 +97,6 @@ public class Menu {
                 }
 
                 case 4 -> {
-                    File file = new File("usuarios.json");
                     UsuariosSerializer.writeToJSON();
                 }
 

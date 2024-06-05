@@ -52,8 +52,6 @@ public class UsuariosSerializer {
             BufferedReader reader = new BufferedReader(new FileReader("usuarios.json"));
             Gson json = new Gson();
 
-            //UsuariosModel model = json.fromJson(reader, UsuariosModel.class);
-
             Lister model = json.fromJson(reader, Lister.class);
 
             Sistema.usuarios = model.getAsHashMap();

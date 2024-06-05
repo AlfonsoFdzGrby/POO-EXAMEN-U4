@@ -123,11 +123,7 @@ public class Alumno extends Usuario {
             System.out.println("SEMESTRE "+i);
             System.out.println("Materias:\tCalificación:");
             for (Calificaciones calificacion : calificaciones.values()) {
-                for (int j = 0; j < 3; j++) {
-                    if (Sistema.semestres.get(nombreCarrera).get(numSemestre).getMaterias().get(j).getNombre().equals(calificacion.getMateria())) {
-                        System.out.println("   * " + calificacion.getMateria().toString() + ": \t" + calificacion.getCalificacion());
-                    }    
-                }
+                System.out.println("   * " + calificacion.getMateria().toString() + ": \t" + calificacion.getCalificacion());
             }
         }
         Tools.next();
@@ -360,7 +356,9 @@ public class Alumno extends Usuario {
         alumno.calificaciones.put(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(0).getNombre(), new Calificaciones(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(0).getNombre()));
         alumno.calificaciones.put(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(1).getNombre(), new Calificaciones(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(1).getNombre()));
         alumno.calificaciones.put(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(2).getNombre(), new Calificaciones(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(2).getNombre()));
-        
+        Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(0).getGrupos().get(0).agregarAlumno(alumno);
+        Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(1).getGrupos().get(0).agregarAlumno(alumno);
+        Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(2).getGrupos().get(0).agregarAlumno(alumno);
         Sistema.usuarios.get(Rol.ALUMNO).add(alumno);
         System.out.println("Alumno registrado correctamente!!");
         Tools.next();
@@ -371,7 +369,7 @@ public class Alumno extends Usuario {
         for (Calificaciones calificacion : this.calificaciones.values()) {
             for (int j = 0; j < 3; j++) {
                 if (calificacion.getMateria().equals(Sistema.semestres.get(this.nombreCarrera).get(this.numSemestre-1).getMaterias().get(j).getNombre())) {
-                    calculo =+ calificacion.getCalificacion();
+                    calculo += calificacion.getCalificacion();
                 }    
             }
         }

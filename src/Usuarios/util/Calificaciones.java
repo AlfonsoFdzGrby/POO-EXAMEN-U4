@@ -1,13 +1,18 @@
 package src.Usuarios.util;
 
-import java.text.Format;
+import com.google.gson.annotations.Expose;
 
-import src.Materia.Materia;
 import src.Materia.util.NombreDeMateria;
 
 public class Calificaciones {
+
+    @Expose
     private double calificacion;
+    
+    @Expose
     private boolean acreditado = false;
+    
+    @Expose
     private NombreDeMateria materia;
 
     public Calificaciones(NombreDeMateria materia){

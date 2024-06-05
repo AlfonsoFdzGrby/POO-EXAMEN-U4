@@ -223,6 +223,7 @@ public class Profesor extends Usuario {
                 for (Materia materia : semestre.getMaterias()) {
                     if (materia.getNombre().equals(nombreMateria)) {
                         materia.calificarGrupo();
+                        return;
                     }
                 }
             }  

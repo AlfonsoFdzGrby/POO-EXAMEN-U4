@@ -1,25 +1,52 @@
 {
   "alumnos": [
     {
-      "numSemestre": 1,
-      "grupo": "A",
+      "numSemestre": 2,
+      "grupo": "B",
       "promedio": 0.0,
       "graduado": false,
-      "acredito": false,
+      "acredito": true,
       "calificaciones": {
-        "Calculo1": {},
-        "Programacion1": {},
-        "Probabilidad1": {}
+        "Calculo1": {
+          "calificacion": 100.0,
+          "acreditado": true,
+          "materia": "Calculo1"
+        },
+        "Programacion1": {
+          "calificacion": 89.0,
+          "acreditado": true,
+          "materia": "Programacion1"
+        },
+        "Probabilidad1": {
+          "calificacion": 89.0,
+          "acreditado": true,
+          "materia": "Probabilidad1"
+        },
+        "Probabilidad2": {
+          "calificacion": 0.0,
+          "acreditado": false,
+          "materia": "Probabilidad2"
+        },
+        "Programacion2": {
+          "calificacion": 0.0,
+          "acreditado": false,
+          "materia": "Programacion2"
+        },
+        "Calculo2": {
+          "calificacion": 0.0,
+          "acreditado": false,
+          "materia": "Calculo2"
+        }
       },
       "nombreCarrera": "ISC",
       "nombre": "Oscar",
       "apellidos": "Arias Corona",
-      "fechaNacimiento": "2005-05-10",
+      "fechaNacimiento": "2005-09-28",
       "ciudad": "Morelia",
       "estado": "Michoacan",
-      "curp": "ARCO050510HMIRRS09",
-      "dirección": "Av Acueducto #537",
-      "fechaRegistro": "2024-06-04",
+      "curp": "ARCO050928HMIRRS83",
+      "dirección": "Acueducto 589",
+      "fechaRegistro": "2024-06-05",
       "esHombre": true,
       "rol": "ALUMNO",
       "numControl": "IO24ISC0",
@@ -28,7 +55,7 @@
   ],
   "profesores": [
     {
-      "rfc": "ABBS630215670",
+      "rfc": "ABBS630215155",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -38,7 +65,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ABBS630215HMIBDL53",
+      "curp": "ABBS630215HMIBDL38",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -47,26 +74,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "MOHA630215080",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
-      "nombreCarrera": "IMT",
-      "nombre": "Alfredo",
-      "apellidos": "Morales Hernández",
-      "fechaNacimiento": "1963-02-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "MOHA630215HMIRRL40",
-      "dirección": "Av. Acueducto #354",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "MA63IMT0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "VECR630215475",
+      "rfc": "VECR630215604",
       "sueldo": 15000.0,
       "materiasImpartidas": [
         "Programacion1",
@@ -79,7 +87,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "VECR630215HMIGNB42",
+      "curp": "VECR630215HMIGNB91",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -88,7 +96,45 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ZAAM630215336",
+      "rfc": "TORF630215108",
+      "sueldo": 15000.0,
+      "materiasImpartidas": [],
+      "numeroMaterias": 0,
+      "nombreCarrera": "IMT",
+      "nombre": "Fernando Manuel",
+      "apellidos": "Torres Ruiz",
+      "fechaNacimiento": "1963-02-15",
+      "ciudad": "Morelia",
+      "estado": "Michoacán",
+      "curp": "TORF630215HMIRZR46",
+      "dirección": "Av. Acueducto #354",
+      "fechaRegistro": "2024-06-04",
+      "esHombre": true,
+      "rol": "PROFESOR",
+      "numControl": "MF63IMT0",
+      "contraseña": "1234"
+    },
+    {
+      "rfc": "MOHA630215857",
+      "sueldo": 15000.0,
+      "materiasImpartidas": [],
+      "numeroMaterias": 0,
+      "nombreCarrera": "IMT",
+      "nombre": "Alfredo",
+      "apellidos": "Morales Hernández",
+      "fechaNacimiento": "1963-02-15",
+      "ciudad": "Morelia",
+      "estado": "Michoacán",
+      "curp": "MOHA630215HMIRRL50",
+      "dirección": "Av. Acueducto #354",
+      "fechaRegistro": "2024-06-04",
+      "esHombre": true,
+      "rol": "PROFESOR",
+      "numControl": "MA63IMT0",
+      "contraseña": "1234"
+    },
+    {
+      "rfc": "ZAAM630215000",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -98,7 +144,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ZAAM630215HMIRGR37",
+      "curp": "ZAAM630215HMIRGR25",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -107,7 +153,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "GAGP630215521",
+      "rfc": "GAGP630215020",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -117,7 +163,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "GAGP630215HMIRND46",
+      "curp": "GAGP630215HMIRND93",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -126,7 +172,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "RICE000409560",
+      "rfc": "RICE000409701",
       "sueldo": 15000.0,
       "materiasImpartidas": [
         "Probabilidad1",
@@ -139,7 +185,7 @@
       "fechaNacimiento": "2000-04-09",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "RICE000409HMIVSD65",
+      "curp": "RICE000409HMIVSD64",
       "dirección": "Av. Acueducto #383",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -148,7 +194,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "JIMJ630215741",
+      "rfc": "JIMJ630215532",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -158,7 +204,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "JIMJ630215HMIMRS44",
+      "curp": "JIMJ630215HMIMRS53",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -167,26 +213,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "TORF630215106",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
-      "nombreCarrera": "IMT",
-      "nombre": "Fernando Manuel",
-      "apellidos": "Torres Ruiz",
-      "fechaNacimiento": "1963-02-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "TORF630215HMIRZR77",
-      "dirección": "Av. Acueducto #354",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "MF63IMT0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "MEVJ520215705",
+      "rfc": "MEVJ520215242",
       "sueldo": 15000.0,
       "materiasImpartidas": [
         "Calculo1",
@@ -200,188 +227,7 @@
       "fechaNacimiento": "1952-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "MEVJ520215HMIJLS18",
-      "dirección": "Av. Acueducto #354",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "MJ52ISC0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "ABBS630215670",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
-      "nombreCarrera": "IMT",
-      "nombre": "Salvador",
-      "apellidos": "Aburto Bedolla",
-      "fechaNacimiento": "1963-02-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "ABBS630215HMIBDL53",
-      "dirección": "Av. Acueducto #354",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "MS63ELC0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "MOHA630215080",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
-      "nombreCarrera": "IMT",
-      "nombre": "Alfredo",
-      "apellidos": "Morales Hernández",
-      "fechaNacimiento": "1963-02-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "MOHA630215HMIRRL40",
-      "dirección": "Av. Acueducto #354",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "MA63IMT0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "VECR630215475",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [
-        "Programacion1",
-        "Programacion2"
-      ],
-      "numeroMaterias": 2,
-      "nombreCarrera": "ISC",
-      "nombre": "Rubén",
-      "apellidos": "Vega Cano",
-      "fechaNacimiento": "1963-02-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "VECR630215HMIGNB42",
-      "dirección": "Av. Acueducto #354",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "MR63ISC0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "ZAAM630215336",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
-      "nombreCarrera": "IMT",
-      "nombre": "Martín",
-      "apellidos": "Zaragoza Aguirre",
-      "fechaNacimiento": "1963-02-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "ZAAM630215HMIRGR37",
-      "dirección": "Av. Acueducto #354",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "MM63ELC0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "GAGP630215521",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
-      "nombreCarrera": "IMT",
-      "nombre": "Pedro",
-      "apellidos": "Garnica González",
-      "fechaNacimiento": "1963-02-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "GAGP630215HMIRND46",
-      "dirección": "Av. Acueducto #354",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "MP63IMT0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "RICE000409560",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [
-        "Probabilidad1",
-        "Probabilidad2"
-      ],
-      "numeroMaterias": 2,
-      "nombreCarrera": "ISC",
-      "nombre": "Eder",
-      "apellidos": "Rivera Cisneros",
-      "fechaNacimiento": "2000-04-09",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "RICE000409HMIVSD65",
-      "dirección": "Av. Acueducto #383",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "ME00ISC0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "JIMJ630215741",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
-      "nombreCarrera": "IMT",
-      "nombre": "José Alfredo",
-      "apellidos": "Jiménez Murillo",
-      "fechaNacimiento": "1963-02-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "JIMJ630215HMIMRS44",
-      "dirección": "Av. Acueducto #354",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "MJ63ELC0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "TORF630215106",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [],
-      "numeroMaterias": 0,
-      "nombreCarrera": "IMT",
-      "nombre": "Fernando Manuel",
-      "apellidos": "Torres Ruiz",
-      "fechaNacimiento": "1963-02-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "TORF630215HMIRZR77",
-      "dirección": "Av. Acueducto #354",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "PROFESOR",
-      "numControl": "MF63IMT0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "MEVJ520215705",
-      "sueldo": 15000.0,
-      "materiasImpartidas": [
-        "Calculo1",
-        "Calculo2",
-        "Calculo3"
-      ],
-      "numeroMaterias": 3,
-      "nombreCarrera": "ISC",
-      "nombre": "José Antonio",
-      "apellidos": "Mejía Villaseñor",
-      "fechaNacimiento": "1952-02-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "MEVJ520215HMIJLS18",
+      "curp": "MEVJ520215HMIJLS15",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -392,7 +238,7 @@
   ],
   "coordinadores": [
     {
-      "rfc": "ALZL731215606",
+      "rfc": "ALZL731215136",
       "sueldo": 30000.0,
       "materiasImpartidas": [
         "Programacion3",
@@ -405,7 +251,7 @@
       "fechaNacimiento": "1973-12-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ALZL731215MMILMR03",
+      "curp": "ALZL731215MMILMR85",
       "dirección": "Av. Acueducto #253",
       "fechaRegistro": "2024-06-04",
       "esHombre": false,
@@ -414,7 +260,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "RECF630205489",
+      "rfc": "RECF630205347",
       "sueldo": 30000.0,
       "materiasImpartidas": [
         "Estadistica1",
@@ -434,7 +280,7 @@
       "fechaNacimiento": "1963-02-05",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "RECF630205HMIYLR49",
+      "curp": "RECF630205HMIYLR20",
       "dirección": "Av. Madero #538",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -443,7 +289,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "LÓMJ830512678",
+      "rfc": "LÓMJ830512613",
       "sueldo": 30000.0,
       "materiasImpartidas": [
         "Redes1",
@@ -463,87 +309,7 @@
       "fechaNacimiento": "1983-05-12",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "LÓMJ830512HMIÓTV25",
-      "dirección": "Perif. Paseo de la República #253",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "COORDINADOR",
-      "numControl": "CJ83ELC0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "ALZL731215606",
-      "sueldo": 30000.0,
-      "materiasImpartidas": [
-        "Programacion3",
-        "Probabilidad3"
-      ],
-      "numeroMaterias": 2,
-      "nombreCarrera": "ISC",
-      "nombre": "Laura Nelly",
-      "apellidos": "Alvarado Zamora",
-      "fechaNacimiento": "1973-12-15",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "ALZL731215MMILMR03",
-      "dirección": "Av. Acueducto #253",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": false,
-      "rol": "COORDINADOR",
-      "numControl": "CL73ISC0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "RECF630205489",
-      "sueldo": 30000.0,
-      "materiasImpartidas": [
-        "Estadistica1",
-        "Estadistica2",
-        "Estadistica3",
-        "Contabilidad1",
-        "Contabilidad2",
-        "Contabilidad3",
-        "Calculo1",
-        "Calculo2",
-        "Calculo3"
-      ],
-      "numeroMaterias": 9,
-      "nombreCarrera": "IMT",
-      "nombre": "Francisco",
-      "apellidos": "Reyes Calderón",
-      "fechaNacimiento": "1963-02-05",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "RECF630205HMIYLR49",
-      "dirección": "Av. Madero #538",
-      "fechaRegistro": "2024-06-04",
-      "esHombre": true,
-      "rol": "COORDINADOR",
-      "numControl": "CF63IMT0",
-      "contraseña": "1234"
-    },
-    {
-      "rfc": "LÓMJ830512678",
-      "sueldo": 30000.0,
-      "materiasImpartidas": [
-        "Redes1",
-        "Redes2",
-        "Redes3",
-        "Circuitos1",
-        "Circuitos2",
-        "Circuitos3",
-        "Calculo1",
-        "Calculo2",
-        "Calculo3"
-      ],
-      "numeroMaterias": 9,
-      "nombreCarrera": "ELC",
-      "nombre": "Javier",
-      "apellidos": "López Mateos",
-      "fechaNacimiento": "1983-05-12",
-      "ciudad": "Morelia",
-      "estado": "Michoacán",
-      "curp": "LÓMJ830512HMIÓTV25",
+      "curp": "LÓMJ830512HMIÓTV68",
       "dirección": "Perif. Paseo de la República #253",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -566,7 +332,45 @@
             "grupos": [
               {
                 "nombreDeCarrera": "ISC",
-                "alumnos": [],
+                "alumnos": [
+                  {
+                    "numSemestre": 1,
+                    "grupo": "A",
+                    "promedio": 26.666666666666668,
+                    "graduado": false,
+                    "acredito": false,
+                    "calificaciones": {
+                      "Calculo1": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Calculo1"
+                      },
+                      "Programacion1": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Programacion1"
+                      },
+                      "Probabilidad1": {
+                        "calificacion": 80.0,
+                        "acreditado": false,
+                        "materia": "Probabilidad1"
+                      }
+                    },
+                    "nombreCarrera": "ISC",
+                    "nombre": "Oscar",
+                    "apellidos": "Arias Corona",
+                    "fechaNacimiento": "2005-09-28",
+                    "ciudad": "Morelia",
+                    "estado": "Michoacan",
+                    "curp": "ARCO050928HMIRRS83",
+                    "dirección": "Acueducto 589",
+                    "fechaRegistro": "2024-06-05",
+                    "esHombre": true,
+                    "rol": "ALUMNO",
+                    "numControl": "IO24ISC0",
+                    "contraseña": "1234"
+                  }
+                ],
                 "grupo": "A",
                 "id": 3
               },
@@ -584,7 +388,7 @@
               "fechaNacimiento": "2000-04-09",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RICE000409HMIVSD65",
+              "curp": "RICE000409HMIVSD64",
               "dirección": "Av. Acueducto #383",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -600,7 +404,45 @@
             "grupos": [
               {
                 "nombreDeCarrera": "ISC",
-                "alumnos": [],
+                "alumnos": [
+                  {
+                    "numSemestre": 1,
+                    "grupo": "A",
+                    "promedio": 0.0,
+                    "graduado": false,
+                    "acredito": false,
+                    "calificaciones": {
+                      "Calculo1": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Calculo1"
+                      },
+                      "Programacion1": {
+                        "calificacion": 75.0,
+                        "acreditado": false,
+                        "materia": "Programacion1"
+                      },
+                      "Probabilidad1": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Probabilidad1"
+                      }
+                    },
+                    "nombreCarrera": "ISC",
+                    "nombre": "Oscar",
+                    "apellidos": "Arias Corona",
+                    "fechaNacimiento": "2005-09-28",
+                    "ciudad": "Morelia",
+                    "estado": "Michoacan",
+                    "curp": "ARCO050928HMIRRS83",
+                    "dirección": "Acueducto 589",
+                    "fechaRegistro": "2024-06-05",
+                    "esHombre": true,
+                    "rol": "ALUMNO",
+                    "numControl": "IO24ISC0",
+                    "contraseña": "1234"
+                  }
+                ],
                 "grupo": "A",
                 "id": 1
               },
@@ -618,7 +460,7 @@
               "fechaNacimiento": "1963-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "VECR630215HMIGNB42",
+              "curp": "VECR630215HMIGNB91",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -634,7 +476,45 @@
             "grupos": [
               {
                 "nombreDeCarrera": "ISC",
-                "alumnos": [],
+                "alumnos": [
+                  {
+                    "numSemestre": 1,
+                    "grupo": "A",
+                    "promedio": 0.0,
+                    "graduado": false,
+                    "acredito": false,
+                    "calificaciones": {
+                      "Calculo1": {
+                        "calificacion": 89.0,
+                        "acreditado": false,
+                        "materia": "Calculo1"
+                      },
+                      "Programacion1": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Programacion1"
+                      },
+                      "Probabilidad1": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Probabilidad1"
+                      }
+                    },
+                    "nombreCarrera": "ISC",
+                    "nombre": "Oscar",
+                    "apellidos": "Arias Corona",
+                    "fechaNacimiento": "2005-09-28",
+                    "ciudad": "Morelia",
+                    "estado": "Michoacan",
+                    "curp": "ARCO050928HMIRRS83",
+                    "dirección": "Acueducto 589",
+                    "fechaRegistro": "2024-06-05",
+                    "esHombre": true,
+                    "rol": "ALUMNO",
+                    "numControl": "IO24ISC0",
+                    "contraseña": "1234"
+                  }
+                ],
                 "grupo": "A",
                 "id": 5
               },
@@ -652,7 +532,7 @@
               "fechaNacimiento": "1952-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "MEVJ520215HMIJLS18",
+              "curp": "MEVJ520215HMIJLS15",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -681,7 +561,112 @@
               },
               {
                 "nombreDeCarrera": "ISC",
-                "alumnos": [],
+                "alumnos": [
+                  {
+                    "numSemestre": 2,
+                    "grupo": "B",
+                    "promedio": 0.0,
+                    "graduado": false,
+                    "acredito": true,
+                    "calificaciones": {
+                      "Calculo1": {
+                        "calificacion": 100.0,
+                        "acreditado": true,
+                        "materia": "Calculo1"
+                      },
+                      "Programacion1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Programacion1"
+                      },
+                      "Probabilidad1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Probabilidad1"
+                      },
+                      "Probabilidad2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Probabilidad2"
+                      },
+                      "Programacion2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Programacion2"
+                      },
+                      "Calculo2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Calculo2"
+                      }
+                    },
+                    "nombreCarrera": "ISC",
+                    "nombre": "Oscar",
+                    "apellidos": "Arias Corona",
+                    "fechaNacimiento": "2005-09-28",
+                    "ciudad": "Morelia",
+                    "estado": "Michoacan",
+                    "curp": "ARCO050928HMIRRS83",
+                    "dirección": "Acueducto 589",
+                    "fechaRegistro": "2024-06-05",
+                    "esHombre": true,
+                    "rol": "ALUMNO",
+                    "numControl": "IO24ISC0",
+                    "contraseña": "1234"
+                  },
+                  {
+                    "numSemestre": 2,
+                    "grupo": "B",
+                    "promedio": 0.0,
+                    "graduado": false,
+                    "acredito": true,
+                    "calificaciones": {
+                      "Calculo1": {
+                        "calificacion": 100.0,
+                        "acreditado": true,
+                        "materia": "Calculo1"
+                      },
+                      "Programacion1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Programacion1"
+                      },
+                      "Probabilidad1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Probabilidad1"
+                      },
+                      "Probabilidad2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Probabilidad2"
+                      },
+                      "Programacion2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Programacion2"
+                      },
+                      "Calculo2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Calculo2"
+                      }
+                    },
+                    "nombreCarrera": "ISC",
+                    "nombre": "Oscar",
+                    "apellidos": "Arias Corona",
+                    "fechaNacimiento": "2005-09-28",
+                    "ciudad": "Morelia",
+                    "estado": "Michoacan",
+                    "curp": "ARCO050928HMIRRS83",
+                    "dirección": "Acueducto 589",
+                    "fechaRegistro": "2024-06-05",
+                    "esHombre": true,
+                    "rol": "ALUMNO",
+                    "numControl": "IO24ISC0",
+                    "contraseña": "1234"
+                  }
+                ],
                 "grupo": "B",
                 "id": 10
               }
@@ -693,7 +678,7 @@
               "fechaNacimiento": "2000-04-09",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RICE000409HMIVSD65",
+              "curp": "RICE000409HMIVSD64",
               "dirección": "Av. Acueducto #383",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -715,7 +700,112 @@
               },
               {
                 "nombreDeCarrera": "ISC",
-                "alumnos": [],
+                "alumnos": [
+                  {
+                    "numSemestre": 2,
+                    "grupo": "B",
+                    "promedio": 0.0,
+                    "graduado": false,
+                    "acredito": true,
+                    "calificaciones": {
+                      "Calculo1": {
+                        "calificacion": 100.0,
+                        "acreditado": true,
+                        "materia": "Calculo1"
+                      },
+                      "Programacion1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Programacion1"
+                      },
+                      "Probabilidad1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Probabilidad1"
+                      },
+                      "Probabilidad2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Probabilidad2"
+                      },
+                      "Programacion2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Programacion2"
+                      },
+                      "Calculo2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Calculo2"
+                      }
+                    },
+                    "nombreCarrera": "ISC",
+                    "nombre": "Oscar",
+                    "apellidos": "Arias Corona",
+                    "fechaNacimiento": "2005-09-28",
+                    "ciudad": "Morelia",
+                    "estado": "Michoacan",
+                    "curp": "ARCO050928HMIRRS83",
+                    "dirección": "Acueducto 589",
+                    "fechaRegistro": "2024-06-05",
+                    "esHombre": true,
+                    "rol": "ALUMNO",
+                    "numControl": "IO24ISC0",
+                    "contraseña": "1234"
+                  },
+                  {
+                    "numSemestre": 2,
+                    "grupo": "B",
+                    "promedio": 0.0,
+                    "graduado": false,
+                    "acredito": true,
+                    "calificaciones": {
+                      "Calculo1": {
+                        "calificacion": 100.0,
+                        "acreditado": true,
+                        "materia": "Calculo1"
+                      },
+                      "Programacion1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Programacion1"
+                      },
+                      "Probabilidad1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Probabilidad1"
+                      },
+                      "Probabilidad2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Probabilidad2"
+                      },
+                      "Programacion2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Programacion2"
+                      },
+                      "Calculo2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Calculo2"
+                      }
+                    },
+                    "nombreCarrera": "ISC",
+                    "nombre": "Oscar",
+                    "apellidos": "Arias Corona",
+                    "fechaNacimiento": "2005-09-28",
+                    "ciudad": "Morelia",
+                    "estado": "Michoacan",
+                    "curp": "ARCO050928HMIRRS83",
+                    "dirección": "Acueducto 589",
+                    "fechaRegistro": "2024-06-05",
+                    "esHombre": true,
+                    "rol": "ALUMNO",
+                    "numControl": "IO24ISC0",
+                    "contraseña": "1234"
+                  }
+                ],
                 "grupo": "B",
                 "id": 8
               }
@@ -727,7 +817,7 @@
               "fechaNacimiento": "1963-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "VECR630215HMIGNB42",
+              "curp": "VECR630215HMIGNB91",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -749,7 +839,112 @@
               },
               {
                 "nombreDeCarrera": "ISC",
-                "alumnos": [],
+                "alumnos": [
+                  {
+                    "numSemestre": 2,
+                    "grupo": "B",
+                    "promedio": 0.0,
+                    "graduado": false,
+                    "acredito": true,
+                    "calificaciones": {
+                      "Calculo1": {
+                        "calificacion": 100.0,
+                        "acreditado": true,
+                        "materia": "Calculo1"
+                      },
+                      "Programacion1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Programacion1"
+                      },
+                      "Probabilidad1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Probabilidad1"
+                      },
+                      "Probabilidad2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Probabilidad2"
+                      },
+                      "Programacion2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Programacion2"
+                      },
+                      "Calculo2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Calculo2"
+                      }
+                    },
+                    "nombreCarrera": "ISC",
+                    "nombre": "Oscar",
+                    "apellidos": "Arias Corona",
+                    "fechaNacimiento": "2005-09-28",
+                    "ciudad": "Morelia",
+                    "estado": "Michoacan",
+                    "curp": "ARCO050928HMIRRS83",
+                    "dirección": "Acueducto 589",
+                    "fechaRegistro": "2024-06-05",
+                    "esHombre": true,
+                    "rol": "ALUMNO",
+                    "numControl": "IO24ISC0",
+                    "contraseña": "1234"
+                  },
+                  {
+                    "numSemestre": 2,
+                    "grupo": "B",
+                    "promedio": 0.0,
+                    "graduado": false,
+                    "acredito": true,
+                    "calificaciones": {
+                      "Calculo1": {
+                        "calificacion": 100.0,
+                        "acreditado": true,
+                        "materia": "Calculo1"
+                      },
+                      "Programacion1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Programacion1"
+                      },
+                      "Probabilidad1": {
+                        "calificacion": 89.0,
+                        "acreditado": true,
+                        "materia": "Probabilidad1"
+                      },
+                      "Probabilidad2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Probabilidad2"
+                      },
+                      "Programacion2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Programacion2"
+                      },
+                      "Calculo2": {
+                        "calificacion": 0.0,
+                        "acreditado": false,
+                        "materia": "Calculo2"
+                      }
+                    },
+                    "nombreCarrera": "ISC",
+                    "nombre": "Oscar",
+                    "apellidos": "Arias Corona",
+                    "fechaNacimiento": "2005-09-28",
+                    "ciudad": "Morelia",
+                    "estado": "Michoacan",
+                    "curp": "ARCO050928HMIRRS83",
+                    "dirección": "Acueducto 589",
+                    "fechaRegistro": "2024-06-05",
+                    "esHombre": true,
+                    "rol": "ALUMNO",
+                    "numControl": "IO24ISC0",
+                    "contraseña": "1234"
+                  }
+                ],
                 "grupo": "B",
                 "id": 12
               }
@@ -761,7 +956,7 @@
               "fechaNacimiento": "1952-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "MEVJ520215HMIJLS18",
+              "curp": "MEVJ520215HMIJLS15",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -802,7 +997,7 @@
               "fechaNacimiento": "1973-12-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "ALZL731215MMILMR03",
+              "curp": "ALZL731215MMILMR85",
               "dirección": "Av. Acueducto #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": false,
@@ -836,7 +1031,7 @@
               "fechaNacimiento": "1973-12-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "ALZL731215MMILMR03",
+              "curp": "ALZL731215MMILMR85",
               "dirección": "Av. Acueducto #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": false,
@@ -870,7 +1065,7 @@
               "fechaNacimiento": "1952-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "MEVJ520215HMIJLS18",
+              "curp": "MEVJ520215HMIJLS15",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -913,7 +1108,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV25",
+              "curp": "LÓMJ830512HMIÓTV68",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -947,7 +1142,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV25",
+              "curp": "LÓMJ830512HMIÓTV68",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -981,7 +1176,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV25",
+              "curp": "LÓMJ830512HMIÓTV68",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1022,7 +1217,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV25",
+              "curp": "LÓMJ830512HMIÓTV68",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1056,7 +1251,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV25",
+              "curp": "LÓMJ830512HMIÓTV68",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1090,7 +1285,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV25",
+              "curp": "LÓMJ830512HMIÓTV68",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1131,7 +1326,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV25",
+              "curp": "LÓMJ830512HMIÓTV68",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1165,7 +1360,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV25",
+              "curp": "LÓMJ830512HMIÓTV68",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1199,7 +1394,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV25",
+              "curp": "LÓMJ830512HMIÓTV68",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1263,7 +1458,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR49",
+              "curp": "RECF630205HMIYLR20",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1297,7 +1492,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR49",
+              "curp": "RECF630205HMIYLR20",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1331,7 +1526,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR49",
+              "curp": "RECF630205HMIYLR20",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1372,7 +1567,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR49",
+              "curp": "RECF630205HMIYLR20",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1406,7 +1601,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR49",
+              "curp": "RECF630205HMIYLR20",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1440,7 +1635,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR49",
+              "curp": "RECF630205HMIYLR20",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1481,7 +1676,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR49",
+              "curp": "RECF630205HMIYLR20",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1515,7 +1710,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR49",
+              "curp": "RECF630205HMIYLR20",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1549,7 +1744,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR49",
+              "curp": "RECF630205HMIYLR20",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,

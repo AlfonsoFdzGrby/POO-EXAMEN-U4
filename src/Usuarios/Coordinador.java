@@ -100,10 +100,10 @@ public class Coordinador extends Usuario {
     
     public void avanzarSemestre(){
         int numSemestre = -1;
-        while (numSemestre < 1 && numSemestre > 3) {
+        while (numSemestre < 1 || numSemestre > 3) {
             System.out.println("Ingrese el numero de Semestre que desea avanzar: ");
             numSemestre = Tools.nextInt();
-            if (numSemestre < 1 && numSemestre > 3) {
+            if (numSemestre < 1 || numSemestre > 3) {
                 System.out.println("Ha ingresado un semestre no existente, intente de nuevo...");
             }            
         }
