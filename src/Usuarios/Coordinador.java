@@ -174,16 +174,11 @@ public class Coordinador extends Usuario {
             }
             flag = true;
             Carrera carrera = null;
-            for (Carrera carrera1 : Sistema.carreras) {
-                if (carrera1.getCarrera().equals(this.nombreCarrera)) {
-                    carrera = carrera1;
-                }
-            }
             while (flag) {
                 System.out.println("Que materia desea ver: ");
-                System.out.println("1. "+carrera.getSemestres().get(numSemestre).getMaterias().get(0).getNombre().toString());
-                System.out.println("2. "+carrera.getSemestres().get(numSemestre).getMaterias().get(1).getNombre().toString());
-                System.out.println("3. "+carrera.getSemestres().get(numSemestre).getMaterias().get(2).getNombre().toString());
+                System.out.println("1. "+Sistema.semestres.get(this.nombreCarrera).get(numSemestre).getMaterias().get(0));
+                System.out.println("2. "+Sistema.semestres.get(this.nombreCarrera).get(numSemestre).getMaterias().get(0));
+                System.out.println("3. "+Sistema.semestres.get(this.nombreCarrera).get(numSemestre).getMaterias().get(0));
                 System.out.println("4. Todas");
                 System.out.print(">> ");
 
@@ -191,15 +186,15 @@ public class Coordinador extends Usuario {
 
                 switch (opt) {
                     case 1 -> {
-                        nombreMateria = carrera.getSemestres().get(numSemestre-1).getMaterias().get(0).getNombre();
+                        nombreMateria = Sistema.semestres.get(this.nombreCarrera).get(numSemestre).getMaterias().get(0).getNombre();
                         flag = false;
                     }
                     case 2 -> {
-                        nombreMateria = carrera.getSemestres().get(numSemestre-1).getMaterias().get(1).getNombre();
+                        nombreMateria = Sistema.semestres.get(this.nombreCarrera).get(numSemestre).getMaterias().get(1).getNombre();
                         flag = false;
                     }
                     case 3 -> {
-                        nombreMateria = carrera.getSemestres().get(numSemestre-1).getMaterias().get(2).getNombre();
+                        nombreMateria = Sistema.semestres.get(this.nombreCarrera).get(numSemestre).getMaterias().get(2).getNombre();
                         flag = false;
                     }
                     case 4 -> {
@@ -302,7 +297,7 @@ public class Coordinador extends Usuario {
             int opt = Tools.nextInt();
 
             try {
-                Materia materia = FindID.findMateria(profesor.getMateriasImpartidas().get(opt));
+                Materia materia = FindID.findMateria(profesor.getMateriasImpartidas().get(opt-1));
                 materia.setProfesor(profesor, materia);
                 flag = false;    
             } catch (Exception e) {
@@ -329,7 +324,7 @@ public class Coordinador extends Usuario {
 
             int opt = Tools.nextInt();
             try {
-                Materia materia = FindID.findMateria(this.getMateriasImpartidas().get(opt));
+                Materia materia = FindID.findMateria(this.getMateriasImpartidas().get(opt-1));
                 materia.setProfesor(this, materia);
                 flag = false;    
             } catch (Exception e) {

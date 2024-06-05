@@ -124,9 +124,27 @@ public class Tools {
 
     public static void printHeader(String header) throws Exception {
         clear();
+
+        /*String splitter = "";
+        for (int i = 0; i < 64; i++) {
+            splitter+="=";
+            System.out.print("\r" + splitter);
+            Thread.sleep(2);
+        }
+        System.out.println();
+        splitter = "";*/
+
         System.out.println("===============================================================");
         System.out.println(header);
         System.out.println("===============================================================");
+
+        /*for (int i = 0; i < 64; i++) {
+            splitter+="=";
+            System.out.print("\r" + splitter);
+            Thread.sleep(1);
+        }
+        System.out.println();
+        splitter = "";*/
     }
 
     public static void next(){

@@ -12,6 +12,7 @@ public class Calificaciones {
 
     public Calificaciones(NombreDeMateria materia){
         this.materia = materia;
+        this.calificacion = 0;
     }
 
     public boolean isAcreditado() {

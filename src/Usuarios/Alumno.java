@@ -2,8 +2,7 @@ package src.Usuarios;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 
 import com.google.gson.annotations.Expose;
 
@@ -39,7 +38,7 @@ public class Alumno extends Usuario {
     private String fechaGraduacion = null;
     
     @Expose
-    private HashMap<NombreDeMateria, Calificaciones> calificaciones = new HashMap<>();
+    private Map<NombreDeMateria, Calificaciones> calificaciones = new HashMap<>();
     
     public Alumno(String nombre, String apellidos, LocalDate fechaNacimiento, String ciudad, String estado,
             String dirección, boolean esHombre, NombreDeCarrera carrera, int semestre, LetraGrupo grupo, double promedio, String contraseña) {
@@ -86,7 +85,7 @@ public class Alumno extends Usuario {
         return graduado;
     }
 
-    public HashMap<NombreDeMateria, Calificaciones> getCalificaciones() {
+    public Map<NombreDeMateria, Calificaciones> getCalificaciones() {
         return calificaciones;
     }
 
@@ -144,37 +143,49 @@ public class Alumno extends Usuario {
         Tools.printHeader("LISTA DE ALUMNOS");
         for (Usuario usuario : Sistema.usuarios.get(Rol.ALUMNO)) {
             Alumno alumno = (Alumno)usuario;
-            if (UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())) {
-                alumno.toString();    
-            }
+            alumno.toString();
         }
         Tools.next();
     }
 
     public static void printAlumnos(boolean aprobado) throws Exception {
-        if (Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario)
-        .filter(alumno -> alumno.isAcredito() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().isEmpty()) {
-            System.out.println("No hay alumnos con este filtro!");
+        if (aprobado) {
+            if (Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario)
+            .filter(alumno -> alumno.isAcredito() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().isEmpty()) {
+                System.out.println("No hay alumnos con este filtro!");
+                Tools.next();
+                return;
+            } else {
+                Tools.printHeader("LISTA DE ALUMNOS");
+                Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario)
+            .filter(alumno -> alumno.isAcredito() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().forEach(alumno -> System.out.println(alumno.toString()));
+            }
             Tools.next();
-            return;
         } else {
-            Tools.printHeader("LISTA DE ALUMNOS");
-            Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario)
-        .filter(alumno -> alumno.isAcredito() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().forEach(alumno -> System.out.println(alumno.toString()));
+            if (Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario)
+            .filter(alumno -> !alumno.isAcredito() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().isEmpty()) {
+                System.out.println("No hay alumnos con este filtro!");
+                Tools.next();
+                return;
+            } else {
+                Tools.printHeader("LISTA DE ALUMNOS");
+                Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario)
+            .filter(alumno -> !alumno.isAcredito() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().forEach(alumno -> System.out.println(alumno.toString()));
+            }
+            Tools.next();
         }
-        Tools.next();
     }
 
     public static void printAlumnos(int numSemestre) throws Exception {
         if (Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario)
-        .filter(alumno -> numSemestre == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().isEmpty()) {
+        .filter(alumno -> numSemestre+1 == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().isEmpty()) {
             System.out.println("No hay alumnos con este filtro!");
             Tools.next();
             return;
         } else {
             Tools.printHeader("LISTA DE ALUMNOS");
             Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario).
-            filter(alumno -> numSemestre == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().forEach(alumno -> System.out.println(alumno.toString()));
+            filter(alumno -> numSemestre+1 == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().forEach(alumno -> System.out.println(alumno.toString()));
         }
         Tools.next();
     }
@@ -182,26 +193,26 @@ public class Alumno extends Usuario {
     public static void printAlumnos(int numSemestre, boolean aprobado) throws Exception {
         if (aprobado) {
             if (Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario)
-            .filter(alumno -> alumno.isAcredito() && numSemestre == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().isEmpty()) {
+            .filter(alumno -> alumno.isAcredito() && numSemestre+1 == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().isEmpty()) {
                 System.out.println("No hay alumnos con este filtro!");
                 Tools.next();
                 return;
             } else {
                 Tools.printHeader("LISTA DE ALUMNOS");
                 Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario).
-                filter(alumno -> alumno.isAcredito() && numSemestre == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().forEach(alumno -> System.out.println(alumno.toString()));
+                filter(alumno -> alumno.isAcredito() && numSemestre+1 == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().forEach(alumno -> System.out.println(alumno.toString()));
             }
             Tools.next();
         } else {
             if (Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario)
-            .filter(alumno -> !alumno.isAcredito() && numSemestre == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().isEmpty()) {
+            .filter(alumno -> !alumno.isAcredito() && numSemestre+1 == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().isEmpty()) {
                 System.out.println("No hay alumnos con este filtro!");
                 Tools.next();
                 return;
             } else {
                 Tools.printHeader("LISTA DE ALUMNOS");
                 Sistema.usuarios.get(Rol.ALUMNO).stream().map(usuario -> (Alumno) usuario).
-                filter(alumno -> !alumno.isAcredito() && numSemestre == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().forEach(alumno -> System.out.println(alumno.toString()));
+                filter(alumno -> !alumno.isAcredito() && numSemestre+1 == alumno.getNumSemestre() && UsuarioEnSesion.getInstancia().getUsuarioActual().nombreCarrera.equals(alumno.getNombreCarrera())).toList().forEach(alumno -> System.out.println(alumno.toString()));
             }
             Tools.next();
         }

@@ -7,28 +7,28 @@
       "graduado": false,
       "acredito": false,
       "calificaciones": {
-        "Programacion1": {},
         "Calculo1": {},
+        "Programacion1": {},
         "Probabilidad1": {}
       },
       "nombreCarrera": "ISC",
       "nombre": "Oscar",
       "apellidos": "Arias Corona",
-      "fechaNacimiento": "2005-09-28",
+      "fechaNacimiento": "2005-05-10",
       "ciudad": "Morelia",
       "estado": "Michoacan",
-      "curp": "ARCO050928HMIRRS47",
-      "dirección": "Av Acueducto #355",
+      "curp": "ARCO050510HMIRRS09",
+      "dirección": "Av Acueducto #537",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
       "rol": "ALUMNO",
       "numControl": "IO24ISC0",
-      "contraseña": "12345"
+      "contraseña": "1234"
     }
   ],
   "profesores": [
     {
-      "rfc": "ABBS630215665",
+      "rfc": "ABBS630215670",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -38,7 +38,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ABBS630215HMIBDL12",
+      "curp": "ABBS630215HMIBDL53",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -47,7 +47,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "MOHA630215361",
+      "rfc": "MOHA630215080",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -57,7 +57,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "MOHA630215HMIRRL27",
+      "curp": "MOHA630215HMIRRL40",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -66,7 +66,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "VECR630215013",
+      "rfc": "VECR630215475",
       "sueldo": 15000.0,
       "materiasImpartidas": [
         "Programacion1",
@@ -79,7 +79,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "VECR630215HMIGNB31",
+      "curp": "VECR630215HMIGNB42",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -88,7 +88,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ZAAM630215401",
+      "rfc": "ZAAM630215336",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -98,7 +98,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ZAAM630215HMIRGR94",
+      "curp": "ZAAM630215HMIRGR37",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -107,7 +107,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "GAGP630215386",
+      "rfc": "GAGP630215521",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -117,7 +117,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "GAGP630215HMIRND65",
+      "curp": "GAGP630215HMIRND46",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -126,7 +126,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "RICE000409721",
+      "rfc": "RICE000409560",
       "sueldo": 15000.0,
       "materiasImpartidas": [
         "Probabilidad1",
@@ -139,7 +139,7 @@
       "fechaNacimiento": "2000-04-09",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "RICE000409HMIVSD90",
+      "curp": "RICE000409HMIVSD65",
       "dirección": "Av. Acueducto #383",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -148,7 +148,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "JIMJ630215548",
+      "rfc": "JIMJ630215741",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -158,7 +158,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "JIMJ630215HMIMRS09",
+      "curp": "JIMJ630215HMIMRS44",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -167,7 +167,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "TORF630215382",
+      "rfc": "TORF630215106",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -177,7 +177,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "TORF630215HMIRZR45",
+      "curp": "TORF630215HMIRZR77",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -186,7 +186,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "MEVJ520215591",
+      "rfc": "MEVJ520215705",
       "sueldo": 15000.0,
       "materiasImpartidas": [
         "Calculo1",
@@ -200,7 +200,7 @@
       "fechaNacimiento": "1952-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "MEVJ520215HMIJLS28",
+      "curp": "MEVJ520215HMIJLS18",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -209,7 +209,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ABBS630215665",
+      "rfc": "ABBS630215670",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -219,7 +219,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ABBS630215HMIBDL12",
+      "curp": "ABBS630215HMIBDL53",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -228,7 +228,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "MOHA630215361",
+      "rfc": "MOHA630215080",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -238,7 +238,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "MOHA630215HMIRRL27",
+      "curp": "MOHA630215HMIRRL40",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -247,7 +247,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "VECR630215013",
+      "rfc": "VECR630215475",
       "sueldo": 15000.0,
       "materiasImpartidas": [
         "Programacion1",
@@ -260,7 +260,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "VECR630215HMIGNB31",
+      "curp": "VECR630215HMIGNB42",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -269,7 +269,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ZAAM630215401",
+      "rfc": "ZAAM630215336",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -279,7 +279,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ZAAM630215HMIRGR94",
+      "curp": "ZAAM630215HMIRGR37",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -288,7 +288,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "GAGP630215386",
+      "rfc": "GAGP630215521",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -298,7 +298,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "GAGP630215HMIRND65",
+      "curp": "GAGP630215HMIRND46",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -307,7 +307,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "RICE000409721",
+      "rfc": "RICE000409560",
       "sueldo": 15000.0,
       "materiasImpartidas": [
         "Probabilidad1",
@@ -320,7 +320,7 @@
       "fechaNacimiento": "2000-04-09",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "RICE000409HMIVSD90",
+      "curp": "RICE000409HMIVSD65",
       "dirección": "Av. Acueducto #383",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -329,7 +329,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "JIMJ630215548",
+      "rfc": "JIMJ630215741",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -339,7 +339,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "JIMJ630215HMIMRS09",
+      "curp": "JIMJ630215HMIMRS44",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -348,7 +348,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "TORF630215382",
+      "rfc": "TORF630215106",
       "sueldo": 15000.0,
       "materiasImpartidas": [],
       "numeroMaterias": 0,
@@ -358,7 +358,7 @@
       "fechaNacimiento": "1963-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "TORF630215HMIRZR45",
+      "curp": "TORF630215HMIRZR77",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -367,7 +367,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "MEVJ520215591",
+      "rfc": "MEVJ520215705",
       "sueldo": 15000.0,
       "materiasImpartidas": [
         "Calculo1",
@@ -381,7 +381,7 @@
       "fechaNacimiento": "1952-02-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "MEVJ520215HMIJLS28",
+      "curp": "MEVJ520215HMIJLS18",
       "dirección": "Av. Acueducto #354",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -392,7 +392,7 @@
   ],
   "coordinadores": [
     {
-      "rfc": "ALZL731215812",
+      "rfc": "ALZL731215606",
       "sueldo": 30000.0,
       "materiasImpartidas": [
         "Programacion3",
@@ -405,7 +405,7 @@
       "fechaNacimiento": "1973-12-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ALZL731215MMILMR42",
+      "curp": "ALZL731215MMILMR03",
       "dirección": "Av. Acueducto #253",
       "fechaRegistro": "2024-06-04",
       "esHombre": false,
@@ -414,7 +414,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "RECF630205966",
+      "rfc": "RECF630205489",
       "sueldo": 30000.0,
       "materiasImpartidas": [
         "Estadistica1",
@@ -434,7 +434,7 @@
       "fechaNacimiento": "1963-02-05",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "RECF630205HMIYLR79",
+      "curp": "RECF630205HMIYLR49",
       "dirección": "Av. Madero #538",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -443,7 +443,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "LÓMJ830512718",
+      "rfc": "LÓMJ830512678",
       "sueldo": 30000.0,
       "materiasImpartidas": [
         "Redes1",
@@ -463,7 +463,7 @@
       "fechaNacimiento": "1983-05-12",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "LÓMJ830512HMIÓTV19",
+      "curp": "LÓMJ830512HMIÓTV25",
       "dirección": "Perif. Paseo de la República #253",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -472,7 +472,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "ALZL731215812",
+      "rfc": "ALZL731215606",
       "sueldo": 30000.0,
       "materiasImpartidas": [
         "Programacion3",
@@ -485,7 +485,7 @@
       "fechaNacimiento": "1973-12-15",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "ALZL731215MMILMR42",
+      "curp": "ALZL731215MMILMR03",
       "dirección": "Av. Acueducto #253",
       "fechaRegistro": "2024-06-04",
       "esHombre": false,
@@ -494,7 +494,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "RECF630205966",
+      "rfc": "RECF630205489",
       "sueldo": 30000.0,
       "materiasImpartidas": [
         "Estadistica1",
@@ -514,7 +514,7 @@
       "fechaNacimiento": "1963-02-05",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "RECF630205HMIYLR79",
+      "curp": "RECF630205HMIYLR49",
       "dirección": "Av. Madero #538",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -523,7 +523,7 @@
       "contraseña": "1234"
     },
     {
-      "rfc": "LÓMJ830512718",
+      "rfc": "LÓMJ830512678",
       "sueldo": 30000.0,
       "materiasImpartidas": [
         "Redes1",
@@ -543,7 +543,7 @@
       "fechaNacimiento": "1983-05-12",
       "ciudad": "Morelia",
       "estado": "Michoacán",
-      "curp": "LÓMJ830512HMIÓTV19",
+      "curp": "LÓMJ830512HMIÓTV25",
       "dirección": "Perif. Paseo de la República #253",
       "fechaRegistro": "2024-06-04",
       "esHombre": true,
@@ -584,7 +584,7 @@
               "fechaNacimiento": "2000-04-09",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RICE000409HMIVSD90",
+              "curp": "RICE000409HMIVSD65",
               "dirección": "Av. Acueducto #383",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -618,7 +618,7 @@
               "fechaNacimiento": "1963-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "VECR630215HMIGNB31",
+              "curp": "VECR630215HMIGNB42",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -652,7 +652,7 @@
               "fechaNacimiento": "1952-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "MEVJ520215HMIJLS28",
+              "curp": "MEVJ520215HMIJLS18",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -693,7 +693,7 @@
               "fechaNacimiento": "2000-04-09",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RICE000409HMIVSD90",
+              "curp": "RICE000409HMIVSD65",
               "dirección": "Av. Acueducto #383",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -727,7 +727,7 @@
               "fechaNacimiento": "1963-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "VECR630215HMIGNB31",
+              "curp": "VECR630215HMIGNB42",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -761,7 +761,7 @@
               "fechaNacimiento": "1952-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "MEVJ520215HMIJLS28",
+              "curp": "MEVJ520215HMIJLS18",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -802,7 +802,7 @@
               "fechaNacimiento": "1973-12-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "ALZL731215MMILMR42",
+              "curp": "ALZL731215MMILMR03",
               "dirección": "Av. Acueducto #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": false,
@@ -836,7 +836,7 @@
               "fechaNacimiento": "1973-12-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "ALZL731215MMILMR42",
+              "curp": "ALZL731215MMILMR03",
               "dirección": "Av. Acueducto #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": false,
@@ -870,7 +870,7 @@
               "fechaNacimiento": "1952-02-15",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "MEVJ520215HMIJLS28",
+              "curp": "MEVJ520215HMIJLS18",
               "dirección": "Av. Acueducto #354",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -913,7 +913,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV19",
+              "curp": "LÓMJ830512HMIÓTV25",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -947,7 +947,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV19",
+              "curp": "LÓMJ830512HMIÓTV25",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -981,7 +981,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV19",
+              "curp": "LÓMJ830512HMIÓTV25",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1022,7 +1022,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV19",
+              "curp": "LÓMJ830512HMIÓTV25",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1056,7 +1056,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV19",
+              "curp": "LÓMJ830512HMIÓTV25",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1090,7 +1090,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV19",
+              "curp": "LÓMJ830512HMIÓTV25",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1131,7 +1131,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV19",
+              "curp": "LÓMJ830512HMIÓTV25",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1165,7 +1165,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV19",
+              "curp": "LÓMJ830512HMIÓTV25",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1199,7 +1199,7 @@
               "fechaNacimiento": "1983-05-12",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "LÓMJ830512HMIÓTV19",
+              "curp": "LÓMJ830512HMIÓTV25",
               "dirección": "Perif. Paseo de la República #253",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1263,7 +1263,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR79",
+              "curp": "RECF630205HMIYLR49",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1297,7 +1297,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR79",
+              "curp": "RECF630205HMIYLR49",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1331,7 +1331,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR79",
+              "curp": "RECF630205HMIYLR49",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1372,7 +1372,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR79",
+              "curp": "RECF630205HMIYLR49",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1406,7 +1406,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR79",
+              "curp": "RECF630205HMIYLR49",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1440,7 +1440,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR79",
+              "curp": "RECF630205HMIYLR49",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1481,7 +1481,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR79",
+              "curp": "RECF630205HMIYLR49",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1515,7 +1515,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR79",
+              "curp": "RECF630205HMIYLR49",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
@@ -1549,7 +1549,7 @@
               "fechaNacimiento": "1963-02-05",
               "ciudad": "Morelia",
               "estado": "Michoacán",
-              "curp": "RECF630205HMIYLR79",
+              "curp": "RECF630205HMIYLR49",
               "dirección": "Av. Madero #538",
               "fechaRegistro": "2024-06-04",
               "esHombre": true,
