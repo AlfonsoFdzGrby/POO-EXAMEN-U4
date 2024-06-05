@@ -11,7 +11,7 @@ import src.Usuarios.util.UsuarioEnSesion;
 public class Menu {
     private static Scanner sc = new Scanner(System.in);
     private static UsuarioEnSesion usuarioEnSesion = UsuarioEnSesion.getInstancia();
-    private static Sistema sistema = new Sistema(true);
+    private static Sistema sistema = new Sistema(false);
 
     public static void ejecutarMenu() throws Exception {
         Tools.loadBar();

@@ -120,12 +120,12 @@ public class Alumno extends Usuario {
 
     //Método para imprimir calificaciones
     public void imprimirCalificaciones(){
-        System.out.println("Materias:\tCalificación:");
-        for (int i = 0; i <= numSemestre; i++) {
+        for (int i = 1; i <= numSemestre; i++) {
             System.out.println("SEMESTRE "+i);
+            System.out.println("Materias:\tCalificación:");
             for (Calificaciones calificacion : calificaciones.values()) {
                 for (int j = 0; j < 3; j++) {
-                    if (Sistema.semestres.get(nombreCarrera).get(numSemestre-1).getMaterias().get(j).getNombre().equals(calificacion.getMateria())) {
+                    if (Sistema.semestres.get(nombreCarrera).get(numSemestre).getMaterias().get(j).getNombre().equals(calificacion.getMateria())) {
                         System.out.println("   * " + calificacion.getMateria().toString() + ": \t" + calificacion.getCalificacion());
                     }    
                 }
@@ -346,6 +346,10 @@ public class Alumno extends Usuario {
         double promedio = 0;
 
         Alumno alumno = new Alumno(nombre, apellidos, fechaNacimiento, ciudad, estado, direccion, esHombre, nombreDeCarrera, numeroSemestre, grupo, promedio, contrasena);
+        alumno.calificaciones.put(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(0).getNombre(), new Calificaciones(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(0).getNombre()));
+        alumno.calificaciones.put(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(1).getNombre(), new Calificaciones(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(1).getNombre()));
+        alumno.calificaciones.put(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(2).getNombre(), new Calificaciones(Sistema.semestres.get(nombreDeCarrera).get(0).getMaterias().get(2).getNombre()));
+        
         Sistema.usuarios.get(Rol.ALUMNO).add(alumno);
         System.out.println("Alumno registrado correctamente!!");
         Tools.next();
@@ -367,7 +371,9 @@ public class Alumno extends Usuario {
     public void consultarMaterias() throws Exception {
         Tools.printHeader("MATERIAS EN CURSO");
         
-        for (Materia materia : Sistema.semestres.get(nombreCarrera).get(-1).getMaterias()) {
+        Alumno alumno = (Alumno)UsuarioEnSesion.getInstancia().getUsuarioActual();
+        int i = 0;
+        for (Materia materia : Sistema.semestres.get(nombreCarrera).get(alumno.getNumSemestre()-1).getMaterias()) {
             System.out.println(materia.toString() + " * Grupo : " + grupo.toString());
         }
 

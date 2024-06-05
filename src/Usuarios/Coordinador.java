@@ -16,6 +16,7 @@ import src.Sistema.Sistema;
 import src.Sistema.util.Tools;
 import src.Usuarios.util.FindID;
 import src.Usuarios.util.Rol;
+import src.Usuarios.util.UsuarioEnSesion;
 
 public class Coordinador extends Usuario {
     @Expose(serialize = false, deserialize = false)
@@ -83,8 +84,10 @@ public class Coordinador extends Usuario {
         for (ArrayList<Semestre> semestres : Sistema.semestres.values()) {
             for (Semestre semestre : semestres) {
                 for (Materia materia : semestre.getMaterias()) {
-                    System.out.println(i + ". " + materia.getNombre().toString());
-                    i++;
+                    if (materia.getCarrera().equals(UsuarioEnSesion.getInstancia().getUsuarioActual().getNombreCarrera())) {
+                        System.out.println(i + ". " + materia.getNombre().toString());
+                        i++;    
+                    }
                 }
             }  
         }
@@ -509,5 +512,6 @@ public class Coordinador extends Usuario {
                 }
             }  
         }
+        Tools.next();
     }
 }

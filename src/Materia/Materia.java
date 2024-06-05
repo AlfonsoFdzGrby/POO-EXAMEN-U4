@@ -54,6 +54,10 @@ public class Materia {
         return grupos;
     }
 
+    public NombreDeCarrera getCarrera() {
+        return carrera;
+    }
+
     public NombreDeMateria getNombre() {
         return nombre;
     }
