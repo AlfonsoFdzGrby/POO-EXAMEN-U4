@@ -247,6 +247,7 @@ public class Profesor extends Usuario {
                             System.out.println("  "+alumno.toString());    
                         }
                         if (!materia.getGrupos().get(1).getAlumnos().isEmpty()) {
+                            System.out.println("GRUPO B : ");
                             for (Alumno alumno : materia.getGrupos().get(1).getAlumnos()) {
                                 System.out.println("  "+alumno.toString());    
                             }

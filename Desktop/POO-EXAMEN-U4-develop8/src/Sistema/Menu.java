@@ -132,6 +132,7 @@ public class Menu {
                 case 2 -> mostrarInformacion(alumno);
                 case 3 -> alumno.consultarMaterias();
                 case 4 -> usuarioEnSesion.setUsuario(null);
+                default -> System.out.println("Opcion ingresada incorrecta!!");
             }
         }
     }
@@ -153,6 +154,7 @@ public class Menu {
                 case 2 -> profesor.mostrarGrupos();
                 case 3 -> mostrarInformacion(profesor);
                 case 4 -> usuarioEnSesion.setUsuario(null);
+                default -> System.out.println("Opcion ingresada incorrecta!!");
             }
         }
         
@@ -169,7 +171,12 @@ public class Menu {
             System.out.println("2. Mostrar grupos");
             System.out.println("3. Avanzar de semestre");
             System.out.println("4. Mostrar Informacion");
-            System.out.println("5. Cerrar sesión");
+            System.out.println("5. Cambiar Profesor de Materia");
+            System.out.println("6. Delegar Materia a Otro Profesor");
+            System.out.println("7. Ver Informacion Sistema");
+            System.out.println("8. Eliminar Usuarios");
+            System.out.println("9. Modificar Usuarios");
+            System.out.println("10. Cerrar sesión");
             System.out.print(">> ");
             int opc = Tools.nextInt();
             switch (opc) {
@@ -177,7 +184,13 @@ public class Menu {
                 case 2 -> coordinador.mostrarGrupos();
                 case 3 -> coordinador.avanzarSemestre();
                 case 4 -> mostrarInformacion(coordinador);
-                case 5 -> usuarioEnSesion.setUsuario(null);
+                case 5 -> coordinador.modificarProfesMaterias();
+                case 6 -> coordinador.modificarMateriaCoordinador();
+                case 7 -> menuPrints();
+                case 8 -> menuEliminaciones();
+                case 9 -> menuModificaciones();
+                case 10 -> usuarioEnSesion.setUsuario(null);
+                default -> System.out.println("Opcion ingresada incorrecta!!");
             }
         }
     }
@@ -187,5 +200,78 @@ public class Menu {
         System.out.println(usuario.toString());
 
         Tools.next();
+    }
+
+    private static void menuPrints() throws Exception{
+        Coordinador coordinador = (Coordinador)usuarioEnSesion.getUsuarioActual();
+        boolean flag = true;
+
+        while (flag) {
+            Tools.printHeader("INFORMACION DE LA CARRERA");
+            System.out.println("Que desea imprimir: ");
+            System.out.println("1. Alumnos");
+            System.out.println("2. Profesores");
+            System.out.println("3. Graduados");
+            System.out.println("4. Materias");
+            System.out.println("5. Volver");
+            System.out.print(">> ");
+
+            int opt = Tools.nextInt();
+
+            switch (opt) {
+                case 1 -> coordinador.verAlumnos();
+                case 2 -> Profesor.printProfesores();
+                case 3 -> Sistema.printGraduados();
+                case 4 -> coordinador.printMateriasGeneral();
+                case 5 -> flag = false;
+                default -> System.out.println("Opcion ingresada incorrecta!!");
+            }
+        }
+    }
+    
+    private static void menuEliminaciones() throws Exception{
+        Coordinador coordinador = (Coordinador)usuarioEnSesion.getUsuarioActual();
+        boolean flag = true;
+
+        while (flag) {
+            Tools.printHeader("ELIMINAR USUARIO");
+            System.out.println("Que desea eliminar: ");
+            System.out.println("1. Alumno");
+            System.out.println("2. Profesore");
+            System.out.println("3. Volver");
+            System.out.print(">> ");
+
+            int opt = Tools.nextInt();
+
+            switch (opt) {
+                case 1 -> coordinador.eliminarAlumno();
+                case 2 -> coordinador.eliminarProfesor();
+                case 3 -> flag = false;
+                default -> System.out.println("Opcion ingresada incorrecta!!");
+            }
+        }
+    }
+
+    private static void menuModificaciones() throws Exception{
+        Coordinador coordinador = (Coordinador)usuarioEnSesion.getUsuarioActual();
+        boolean flag = true;
+
+        while (flag) {
+            Tools.printHeader("MODIFICAR USUARIO");
+            System.out.println("Que desea modificar: ");
+            System.out.println("1. Alumno");
+            System.out.println("2. Profesore");
+            System.out.println("3. Volver");
+            System.out.print(">> ");
+
+            int opt = Tools.nextInt();
+
+            switch (opt) {
+                case 1 -> coordinador.modificarAlumno();
+                case 2 -> coordinador.modificarProfesor();
+                case 3 -> flag = false;
+                default -> System.out.println("Opcion ingresada incorrecta!!");
+            }
+        }
     }
 }
