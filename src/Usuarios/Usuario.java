@@ -87,7 +87,7 @@ public class Usuario {
     }
     
     public String toString(){
-        return String.format(" Nombre: %s\n Apellidos: %s\n Fecha de nacimiento: %s\n Fecha de registro: %s\n Sexo: %s\n Curp: %s\n Ciudad: %s\n Estado: %s\n Direccion: %s\n Rol: %s \n Carrera: %s \n Numero de Control: %s\n ",this.nombre,this.apellidos,this.fechaNacimiento,this.fechaRegistro,this.esHombre,this.curp,this.ciudad,this.estado,this.dirección,this.rol,this.nombreCarrera,this.numControl );
+        return String.format(" Nombre: %s\n Apellidos: %s\n Fecha de nacimiento: %s\n Fecha de registro: %s\n Sexo: %s\n Curp: %s\n Ciudad: %s\n Estado: %s\n Direccion: %s\n Rol: %s \n Carrera: %s \n Numero de Control: %s\n ",this.nombre,this.apellidos,this.fechaNacimiento,this.fechaRegistro,this.esHombre ? "Hombre" : "Mujer",this.curp,this.ciudad,this.estado,this.dirección,this.rol,this.nombreCarrera,this.numControl );
     }
 
     public Rol getRol() {
