@@ -109,7 +109,7 @@ public class Menu {
     private static void menuAlumno() throws Exception {
         Tools.clear();
         Alumno alumno = (Alumno)usuarioEnSesion.getUsuarioActual();
-        if (alumno.isAcredito()) {
+        if (alumno.isGraduado()) {
             menuGraduados();
         } else {
             while(usuarioEnSesion.getUsuarioActual()!=null){

@@ -82,6 +82,10 @@ public class Alumno extends Usuario {
         return numSemestre;
     }
 
+    public boolean isGraduado() {
+        return graduado;
+    }
+
     public HashMap<NombreDeMateria, Calificaciones> getCalificaciones() {
         return calificaciones;
     }
